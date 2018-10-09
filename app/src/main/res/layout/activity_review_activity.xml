@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.wutai.wutaimoutain.Review_activity">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="#ffffff"
+      android:orientation="horizontal"
+      android:gravity="center">
+
+    <ImageButton
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:background="#ffffff"
+        android:src="@mipmap/back1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+      <TextView
+          android:layout_width="100dp"
+          android:layout_height="30dp"
+          android:gravity="center"
+          android:layout_gravity="center"
+          android:text="全部评论"
+          android:textColor="#EEB422"
+          android:textSize="20dp" />
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:text="热门评论"
+      android:textSize="13dp"
+      android:gravity="center_vertical"
+      android:background="#E5E5E5"/>
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="220dp"
+      android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+      <ImageView
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:src="@mipmap/touxiang1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:text="天霸动霸Tua"
+            android:textColor="#87CEFA"
+            android:gravity="center_vertical"/>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@mipmap/good1"/>
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:text="106"/>
+
+
+      </LinearLayout>
+
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="20dp"
+          android:text="3分钟前"
+          android:textSize="10dp"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="100dp"
+          android:text="五台山风景很美，很有文化底蕴。夕阳返照影流东，点点寒鸦过远峰。 渔叟罢竿收钓饵，牧童吹笛弄秋风。 日光隐隐见苍海，山色青青耸碧空。 万壑千崖增秀丽，往来人在画图中。东临真定北云中，盘薄幽并一气通。
+
+欲得宝符山上是，不须参礼化人宫。"
+          android:textColor="#000000"/>
+
+
+      <LinearLayout
+          android:layout_width="300dp"
+          android:layout_height="50dp"
+          android:background="#EAEAEA"
+          android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+
+          <TextView
+              android:layout_width="110dp"
+              android:layout_height="20dp"
+              android:text="我喜欢的五台山"
+              android:textColor="#87CEFA"/>
+
+          <TextView
+              android:layout_width="40dp"
+              android:layout_height="20dp"
+              android:text="回复"
+              android:textSize="13dp"/>
+
+          <TextView
+              android:layout_width="50dp"
+              android:layout_height="20dp"
+              android:text="估计PK"
+              android:textColor="#87CEFA"/>
+
+          <TextView
+              android:layout_width="10dp"
+              android:layout_height="20dp"
+              android:text=" : " />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="20dp"
+              android:text="景色确实很美"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+          <Button
+              android:layout_width="100dp"
+              android:layout_height="20dp"
+              android:text="等共19条回复>"
+              android:textColor="#b6b3b3"
+              android:background="#EAEAEA"/>
+
+        </LinearLayout>
+
+
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="#E5E5E5"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="250dp"
+      android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/touxiang2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:text="具有文艺气范的侠客"
+            android:textColor="#87CEFA"
+            android:gravity="center_vertical"/>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@mipmap/good1"/>
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:text="52"/>
+
+
+      </LinearLayout>
+
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="20dp"
+          android:text="1小时前"
+          android:textSize="10dp"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="130dp"
+          android:text="五台山，又称清凉山，位于山西省东北部，是我国四大佛教名山之一，在国内首屈一指，名扬天下.五台山的五座主峰，高度都在海拔3000米上下.五台山顶气魄宏大，顶天立地.五座台顶环围的腹地台怀，寺庙林立，殿宇层叠，楼阁峥嵘，佛塔并寺.这里，高山以古寺作幽雅的饰品，古寺凭高山添雄浑的气韵.盛夏，五台山更是一派生机勃发，万木争荣的景象.松柏苍翠，百草浓绿，野花铺锦."
+          android:textColor="#000000" />
+
+      <ImageView
+          android:layout_width="70dp"
+          android:layout_height="70dp"
+          android:src="@mipmap/pinglunp"/>
+
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="35dp"
+      android:background="@drawable/shape_pinglun"
+      android:hint="我也来说两句"
+      android:textSize="10dp"
+      android:inputType="text"/>
+</LinearLayout>

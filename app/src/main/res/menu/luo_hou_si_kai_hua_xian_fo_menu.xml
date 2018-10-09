@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--罗睺寺-->
+    <item
+        android:id="@+id/KHXF_yinglian_detail"
+        android:icon="@mipmap/narrate"
+        android:title="查看楹联"/>
+    <item
+        android:id="@+id/KHXF_voice_desc"
+        android:icon="@mipmap/narrate"
+        android:title="语音导览"/>
+    <item
+        android:id="@+id/KHXF_content"
+        android:title="历史简介"
+        />
+</menu>

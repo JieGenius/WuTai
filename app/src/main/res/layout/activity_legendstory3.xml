@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Stroy.legendstory3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="显通寺——康熙皇帝与无字碑"
+            android:textColor="#000000"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:background="@drawable/sucai4"/>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:scrollbars="vertical"
+            android:text="         传说当年康熙皇帝朝拜五台山来到了显通寺，看到了高高在上的菩萨顶，猛然间，他发觉苦萨项越看越像一个龙头，就随口间旁边的主持:“五台山有没有真龙”?主持不明就里，随口答道“当然有啦!皇上您看，显通寺上面的菩萨项就是这条真龙的龙头，更为奇特的是，我们显通寺文殊殿前有两口泉眼，它们就是龙的眼睛，您别看这两口泉眼现在黯然无光，可每到正午的时候，它们就会放出两道金光，于是这条龙就好像睁开了天眼，登时灵气冲天”。康熙一听，倒吸一口凉气，这还了得，俗话说“国无二主，天无二日”，我是真龙天子，五台山又跑出一条真龙来，这不是要和我争天下吗?一怒之下，痛斥主持:“一派胡言!五台山的龙怎么能睁开眼睛呢?睁了眼不就飞走了吗?飞走了五台山还会有灵气吗?你赶快找人把这两个泉眼给我填住”。皇上的话谁敢不听，于是这两口泉眼很快就被填平了。大概是怕龙眼复明吧，康熙皇帝又命人在上面立了两通碑，一通是赞扬五台山的神圣和文殊菩萨的功德，另一通则空无一字。是忏悔、心虚、无言以对、还是故弃玄虚呢?
+"/>
+    </LinearLayout>
+
+</LinearLayout>

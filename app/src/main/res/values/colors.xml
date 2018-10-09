@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <color name="colorPrimary">#286fe1</color>
+    <color name="colorPrimaryDark">#286fe1</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="realgray">#CCCCCC</color>
+    <color name="rouhelan">#7bbfea</color>
+    <color name="realred">#F01B2D</color>
+    <color name="reaLyellow">#EAF048</color>
+    <color name="realblue">#426ab3</color>
+    <color name="realCHENG">#DEB100</color>
+    <color name="realzi">#7F1874</color>
+    <color name="lanlv">#37C6C0</color>
+    <color name="shenlan">#37acc6</color>
+    <color name="touming">#40808080</color>
+
+
+    <color name="transparency">#40808080</color>
+    <color name="dingxiangse">#cca4e3</color>
+    <color name="yanghong">#ff0097</color>
+    <color name="zhuhong">#ff4c00</color>
+
+    <color name="half_black">#808080</color>
+
+    <color name="white">#fafafa</color>
+
+    <color name="white_pressed">#f1f1f1</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="bussness_tv_bg_unpressed">#00ffffff</color>
+    <color name="bussness_tv_bg_pressed">#2984afd5</color>
+    <color name="gray">#e9e9e9</color>
+    <color name="black">#191919</color>
+
+    <color name="mine_three_login_ibt_unpressed">#00ffffff</color>
+
+    <color name="mine_three_login_ibt_pressed">#53f5f0f0</color>
+
+    <color name="mine_item_bg_unpressed">#ffffff</color>
+
+    <color name="mine_item_bg_pressed">#f4f0f0</color>
+
+    <!--发表说说模块-->
+    <color name="talkTextViewPressed">#a09c9c</color>
+    <color name="talkTextViewUnPressed">#00ffffff</color>
+    <color name="commentTextViewPressed">#a09c9c</color>
+    <color name="commentTextViewUnPressed">#00ffffff</color>
+
+</resources>

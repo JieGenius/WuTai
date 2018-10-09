@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_all_tianwang"
+        android:orderInCategory="100"
+        android:title="天王殿"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/action_all_baita"
+        android:orderInCategory="100"
+        android:title="大白塔"
+        app:showAsAction="never"
+        />
+
+
+    <item
+        android:id="@+id/action_all_cangjing"
+        android:orderInCategory="100"
+        android:title="藏经阁"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_all_ciyan"
+        android:orderInCategory="100"
+        android:title="大慈延寿宝殿"
+        app:showAsAction="never"
+        />
+</menu>

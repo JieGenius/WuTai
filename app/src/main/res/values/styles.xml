@@ -1,0 +1,181 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="ToolbarStyle" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+    </style>
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/rouhelan</item>
+    </style>
+
+    <style name="VoiceDetailTheme" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <!--yyj-->
+    <style name="ManYouWutaiTheme" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="roamWuTaiTextViewTitleStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center_horizontal</item>
+
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:textColor">#3d3636</item>
+    </style>
+
+    <style name="roamWuTaiTextViewTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <style name="roamWuTaiImageViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitStart</item>
+        <item name="android:saveEnabled">true</item>
+    </style>
+    <style name="FullscreenTheme" parent="Theme.Design.NoActionBar">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="android:Widget.Holo.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="bussnessTextViewStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:background">@drawable/bussness_tv_bg</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+
+    <!-- 拍照popwindow -->
+    <style name="take_photo_anim" parent="Animation.AppCompat.DropDownUp">
+        <item name="android:windowEnterAnimation">@anim/popwindow_exit</item>
+        <item name="android:windowExitAnimation">@anim/popwindow_show</item>
+    </style>
+
+    -<style name="mine_ib_style">
+
+    <item name="android:layout_width">wrap_content</item>
+
+    <item name="android:layout_height">wrap_content</item>
+
+    <item name="android:layout_weight">1</item>
+
+    <item name="android:padding">20dp</item>
+
+    <item name="android:scaleType">centerInside</item>
+
+    <item name="android:adjustViewBounds">true</item>
+
+    <!--<item name="android:background">#00ffffff</item>-->
+
+
+    <item name="android:background">@drawable/mine_three_login_ibt_bg</item>
+
+</style>
+
+
+    -<style name="mineTVItemStyle">
+
+    <item name="android:layout_width">match_parent</item>
+
+    <item name="android:layout_height">wrap_content</item>
+
+    <item name="android:background">@drawable/mine_item_tv_bg</item>
+
+    <item name="android:textSize">14sp</item>
+
+    <item name="android:textColor">@color/black</item>
+
+    <item name="android:gravity">center_vertical</item>
+
+    <item name="android:padding">15dp</item>
+
+    <item name="android:layout_marginTop">7dp</item>
+
+    <item name="android:drawableRight">@drawable/mine_ic_right</item>
+
+    <item name="android:drawablePadding">20dp</item>
+
+    <item name="android:drawableTint">#0086FF</item>
+
+    <item name="android:clickable">true</item>
+
+    </style>
+    <style name="MineTextViewTheme" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#0d0c0c</item>
+        <item name="colorControlActivated">#5f1ed9</item>
+    </style>
+
+
+    <!--发表说说模块-->
+    <style name="conment_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:background">#d8cccc</item>
+    </style>
+
+    <style name="commentTextViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:drawableLeft">@drawable/talk_position</item>
+        <item name="android:drawablePadding">15dp</item>
+        <item name="android:background">@drawable/talk_tv_bg</item>
+    </style>
+</resources>

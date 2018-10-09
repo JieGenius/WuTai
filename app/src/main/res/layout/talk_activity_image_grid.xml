@@ -1,0 +1,61 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#286fe1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="相册"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/talk_photo_album_item_tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@drawable/send_talk_select_pic_tv_selector"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/talk_photo_album_item_tv_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:text="完成"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@drawable/send_talk_select_pic_tv_selector"
+                android:layout_marginRight="8dp"
+                />
+        </RelativeLayout>
+        <GridView
+            android:id="@+id/talk_photo_album_item_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:horizontalSpacing="8dp"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="8dp" >
+        </GridView>
+    </LinearLayout>
+</FrameLayout>
+
+

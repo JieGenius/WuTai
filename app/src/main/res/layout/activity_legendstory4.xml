@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Stroy.legendstory4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="显通寺---澄观国师"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:background="@drawable/sucai5" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:scrollbars="vertical"
+            android:text="          唐代华严宗四祖澄观国师的写生像。我们说“江山也要伟人扶”，对于五台山来说，澄观国师就是这样一位伟人。 澄观是华严宗的第四代祖师。唐代大历十-一年，他来到五台山朝拜文殊菩萨，此后常居大华严寺达10年之久。期间，经常讲述《华严经》，但又感到《华严经》深奥难懂，一般人不易理解，于是，历时四年著成了二十卷《大方广佛华严经疏》，对《华严经》的经义作出了详尽而通俗的阐述，成为历史上最权威的《华严经》论著。在新著的《华严经疏》中，澄观国师明确地指出，经中所说的文殊菩萨演教说法的清凉山就是代州雁门郡的五台山。由于澄观国师身历九朝，先后为唐代七帝(代宗、德宗、顺宗、宪宗、穆宗、敬宗、文宗)之师，号称“九朝七帝之师”，被封为“清凉国师”、“僧统清凉国师” ，而且一生宣讲《华严经》达五十多遍，弟子遍及天下，被称为“华严菩萨”、“华严疏主”，所以，他所著的(华严经疏》也就成了论述《华严经》最权威的版木,“五台山就是文味荐萨道场”这一认识也就得到了广大佛教徒的公认。澄观国师生备极弹容， 却能够淡泊名利，依法修行，成就正果，因此被尊为华严宗四祖。他的寿命长达102岁，圆寂后，唐文宗下令罢朝三日、举国哀悼。
+       " />
+
+    </LinearLayout>
+</LinearLayout>

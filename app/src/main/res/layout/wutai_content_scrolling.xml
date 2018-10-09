@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ManYouWuTai.ScrollingActivity"
+    tools:showIn="@layout/wu_tai_activity_scrolling">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+    <TextView
+        android:text="@string/roam_wutai_title1"
+        style="@style/roamWuTaiTextViewTitleStyle" />
+    <TextView
+        android:text="@string/roam_wutai_text1"
+        style="@style/roamWuTaiTextViewTextStyle" />
+    <ImageView
+        android:layout_marginTop="15dp"
+
+        android:src="@drawable/roam_wutai_title1"
+        style="@style/roamWuTaiImageViewStyle" />
+
+    <TextView
+        style="@style/roamWuTaiTextViewTitleStyle"
+        android:text="@string/roam_wutai_title2"
+        />
+    <TextView
+        style="@style/roamWuTaiTextViewTextStyle"
+        android:text="@string/roam_wutai_text2_1"
+        />
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        style="@style/roamWuTaiImageViewStyle"
+        android:src="@drawable/roam_wutai_title2"
+        />
+    <TextView
+        style="@style/roamWuTaiTextViewTextStyle"
+        android:text="@string/roam_wutai_text2_2"
+        />
+    <TextView
+        style="@style/roamWuTaiTextViewTitleStyle"
+        android:text="@string/roam_wutai_title3"
+        />
+    <ImageView
+        android:layout_marginBottom="15dp"
+        style="@style/roamWuTaiImageViewStyle"
+        android:src="@drawable/roam_wutai_title3"
+        />
+    <TextView
+        style="@style/roamWuTaiTextViewTextStyle"
+        android:text="@string/roam_wutai_text3"
+        />
+    <TextView
+        style="@style/roamWuTaiTextViewTitleStyle"
+        android:text="@string/roam_wutai_title4"
+        />
+    <ImageView
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        style="@style/roamWuTaiImageViewStyle"
+        android:src="@drawable/roam_wutai_title4"
+        />
+    <TextView
+        style="@style/roamWuTaiTextViewTextStyle"
+        android:text="@string/roam_wutai_text4"
+        />
+  </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

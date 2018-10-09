@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wutai.wutaimoutain">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 读取网络信息状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取当前wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 读取手机信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- <uses-permission android:name="android.permission.WRITE_SETTINGS" /> -->
+
+
+    <!-- 百度地图 -->
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <!-- 访问网络，网络定位需要上网 -->
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <!-- <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- android:roundIcon="@mipmap/ic_launcher_round" -->
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="2P5B0uGCvS8nWASYDxak1KaEOL2PS8YG" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- android:configChanges="orientation|keyboardHidden|screenLayout|screenSize" -->
+        <activity
+            android:name=".ShowActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Simiao_excess.Activity_excess"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Simiao_excess.Singel_simiao_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Simiao_juti.Simple_text_Activity" />
+        <activity android:name=".yinglian.Yinglian" />
+        <activity
+            android:name=".yinglian.YinglianDetal"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Stroy.Stroy_Activity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".yinglian.YinglianShowActivity"
+            android:theme="@style/ManYouWutaiTheme" />
+        <activity android:name=".Stroy.legendstory1" />
+        <activity android:name=".Stroy.legendstory2" />
+        <activity android:name=".Stroy.legendstory3" />
+        <activity android:name=".Stroy.legendstory4" />
+        <activity android:name=".Stroy.legendstory5" />
+        <activity android:name=".Stroy.legendstory6" />
+        <activity
+            android:name=".Stroy.Single_stroy_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".allsimiaos.Allsimiaoyilan_test"
+            android:launchMode="singleTask"
+            android:theme="@style/ManYouWutaiTheme" />
+        <activity
+            android:name=".VR.VR_showactivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Stroy.Stroy_show_activity_1"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".navigation.NavigationHomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".navigation.XianTongSiActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".navigation.TaYuanSiActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TaYuanSiVoice.DaCangJingGeActivity"
+            android:theme="@style/VoiceDetailTheme" />
+        <activity
+            android:name=".TaYuanSiVoice.DaBaiTaActivity"
+            android:theme="@style/VoiceDetailTheme" />
+        <activity
+            android:name=".TaYuanSiVoice.DaCiYanShouBaoDianActivity"
+            android:theme="@style/VoiceDetailTheme" />
+        <activity
+            android:name=".TaYuanSiVoice.TianWangDianActivity"
+            android:theme="@style/VoiceDetailTheme" />
+        <activity
+            android:name=".ManYouWuTai.ScrollingActivity"
+            android:label="@string/app_name"
+            android:theme="@style/ManYouWutaiTheme" />
+        <activity
+            android:name=".ManYouWuTai.MainActivity"
+            android:label="漫游五台山"
+            android:theme="@style/ManYouWutaiTheme" />
+        <activity
+            android:name=".BaiDuMap.GetPositionActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ShareWithOther.ShareWithiOhterHomeActivity"
+            android:theme="@style/ManYouWutaiTheme" />
+        <activity
+            android:name=".bussness.MainActivity"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".bussness.Bussness"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".yinglian.YingLianHome"
+            android:theme="@style/ManYouWutaiTheme" />
+        <activity
+            android:name=".jianjie_new.Jianjie_new_activity"
+            android:theme="@style/ManYouWutaiTheme" />
+        <activity
+            android:name=".jianjie_new.Jianjie_dadian_actiivty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Simiao_juti.Every_Simiao_Activity"
+            android:theme="@style/ManYouWutaiTheme" />
+        <activity
+            android:name=".Wutaijianjie_activity"
+            android:theme="@style/ManYouWutaiTheme" />
+        <!-- 图片内容提供器 -->
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.wutai.wutaimoutain.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".Review_activity" />
+        <activity
+            android:name=".mine.LoginActivity"
+            android:label="登录"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".mine.SettingActivity"
+            android:label="设置" />
+        <activity
+            android:name=".mine.userCenterActivity"
+            android:label="用户中心"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".mine.FeedbackActivity"
+            android:label="反馈吐槽" />
+        <activity android:name=".mine.Youji" />
+        <activity android:name=".mine.YoujiEditor" />
+        <activity
+            android:name=".sendTalk.SendTalkActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".sendTalk.TestPicActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".sendTalk.ImageGridActivity" />
+        <activity android:name=".sendTalk.PhotoActivity" />
+        <activity android:name=".common.showPhotoListActivity" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".common.ShowOnePictureActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- 2018-10-7 by zhangwei -->
+        <activity
+            android:name=".XianTongSiVoice.WuliangDianActivity"
+            android:theme="@style/VoiceDetailTheme" />
+        <activity
+            android:name=".XianTongSiVoice.DaXiongBaoDianActivity"
+            android:theme="@style/VoiceDetailTheme" />
+        <activity
+            android:name=".XianTongSiVoice.DaWenShuDianActivity"
+            android:theme="@style/VoiceDetailTheme" />
+        <activity
+            android:name=".XianTongSiVoice.GuanYinDianActivity"
+            android:theme="@style/VoiceDetailTheme" />
+        <activity
+            android:name=".BiShanSiVoice.CangJingGeActivity"
+            android:theme="@style/VoiceDetailTheme" />
+        <activity
+            android:name=".BiShanSiVoice.JieTanDianActivity"
+            android:theme="@style/VoiceDetailTheme" />
+        <activity
+            android:name=".BiShanSiVoice.LeiYinSiActivity"
+            android:theme="@style/VoiceDetailTheme" />
+        <activity
+            android:name=".BiShanSiVoice.TianWangDianActivity"
+            android:theme="@style/VoiceDetailTheme" />
+        <activity
+            android:name=".navigation.BiShanSiActivity"
+            android:theme="@style/VoiceDetailTheme" />
+        <activity
+            android:name=".navigation.PuSaDingActivity"
+            android:theme="@style/VoiceDetailTheme" />
+        <activity
+            android:name=".PuSaDingVoice.SengSheActivity"
+            android:theme="@style/VoiceDetailTheme" />
+        <activity
+            android:name=".PuSaDingVoice.WuGuanTangActivity"
+            android:theme="@style/VoiceDetailTheme" />
+        <activity
+            android:name=".PuSaDingVoice.WenShuDianActivity"
+            android:theme="@style/VoiceDetailTheme" />
+        <activity
+            android:name=".PuSaDingVoice.DaXiongBaoDianActivity"
+            android:theme="@style/VoiceDetailTheme" />
+        <activity
+            android:name=".PuSaDingVoice.TianWangDian"
+            android:theme="@style/VoiceDetailTheme" />
+        <activity android:name=".navigation.LuoHouSiActivity"
+            android:theme="@style/VoiceDetailTheme"
+            />
+        <activity android:name=".LuoHouSIVoice.KaiHuaXianFoActivity"
+            android:theme="@style/VoiceDetailTheme"
+            />
+        <activity android:name=".LuoHouSIVoice.DaXiongBaoDianActivity"
+            android:theme="@style/VoiceDetailTheme"
+            />
+        <activity android:name=".LuoHouSIVoice.WenShuDianActivity"
+            android:theme="@style/VoiceDetailTheme"
+            />
+        <activity android:name=".LuoHouSIVoice.TianWangDianActivity"
+            android:theme="@style/VoiceDetailTheme"
+            />
+    </application>
+
+</manifest>

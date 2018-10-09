@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="230dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/simple_text"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_jianjie"
+                app:backgroundTint="?attr/colorControlActivated" />
+
+            <TextView
+                android:textIsSelectable="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/text_jianjie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/simple_text"
+                android:gravity="center"
+                android:text="五台简介" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/all_simiao"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_allsimiaos"
+                app:backgroundTint="@android:color/holo_blue_bright" />
+            <TextView
+                android:textIsSelectable="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:id="@+id/text_simiaos"
+                android:layout_below="@+id/all_simiao"
+                android:layout_toRightOf="@+id/text_jianjie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="寺庙总览"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/couplets"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_couplets"
+                app:backgroundTint="@android:color/holo_green_light" />
+
+            <TextView
+                android:textIsSelectable="true"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/text_couplets"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/all_simiao"
+                android:layout_toRightOf="@+id/text_simiaos"
+                android:gravity="center"
+                android:text="楹联文化" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/navigation"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/navigation"
+                app:backgroundTint="@android:color/holo_orange_dark" />
+
+            <TextView
+                android:textIsSelectable="true"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/couplets"
+                android:layout_toRightOf="@+id/text_couplets"
+                android:gravity="center"
+                android:text="导航解说" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/stroy"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_stroy"
+                app:backgroundTint="?attr/actionModeSplitBackground" />
+            <TextView
+                android:textIsSelectable="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_below="@+id/stroy"
+                android:id="@+id/text_stroy"
+                android:text="五台轶事"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/vr"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_vr"
+                app:backgroundTint="@color/rouhelan" />
+            <TextView
+                android:textIsSelectable="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_below="@+id/vr"
+                android:layout_toRightOf="@+id/text_stroy"
+                android:id="@+id/text_vr"
+                android:text="VR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/yunyinjieshuo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/wutaimanyou"
+                app:backgroundTint="@android:color/holo_purple" />
+            <TextView
+                android:textIsSelectable="true"
+               android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_below="@+id/yunyinjieshuo"
+                android:layout_toRightOf="@+id/text_vr"
+                android:id="@+id/text_yunyin"
+                android:text="漫游五台"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/cook_live"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_cook"
+                app:backgroundTint="@android:color/holo_red_light" />
+            <TextView
+                android:textIsSelectable="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_below="@+id/cook_live"
+                android:layout_toRightOf="@+id/text_yunyin"
+                android:text="商城"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

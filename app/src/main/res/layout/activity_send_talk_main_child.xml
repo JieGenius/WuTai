@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="80dp"
+    >
+    <View style="@style/conment_line" />
+    <TextView
+        android:text="所在位置"
+        style="@style/commentTextViewStyle" />
+    <View style="@style/conment_line" />
+    <TextView
+        style="@style/commentTextViewStyle"
+        android:text="谁可以看"
+        />
+    <View style="@style/conment_line" />
+    <TextView
+        style="@style/commentTextViewStyle"
+        android:text="提醒谁看"
+        />
+    <View style="@style/conment_line" />
+</LinearLayout>

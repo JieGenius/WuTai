@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".jianjie_new.Jianjie_new_activity">
+  <android.support.design.widget.AppBarLayout
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize">
+    <android.support.v7.widget.Toolbar
+        app:layout_collapseMode="pin"
+        android:id="@+id/jianjie_new_toolbar"
+        android:layout_width="match_parent"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        android:layout_height="match_parent"/>
+  </android.support.design.widget.AppBarLayout>
+
+
+  <android.support.v4.widget.NestedScrollView
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+      <ImageView
+          android:scaleType="fitXY"
+          android:id="@+id/jianjie_pic_simaio"
+          android:layout_width="match_parent"
+          android:layout_height="60dp" />
+      <android.support.v7.widget.CardView
+          app:cardCornerRadius="5dp"
+          android:layout_width="match_parent"
+          android:layout_height="200dp">
+        <ImageView
+            android:layout_margin="3dp"
+            android:src="@drawable/wutaishan"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:id="@+id/jianjie_pic_stage"/>
+      </android.support.v7.widget.CardView>
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="7dp"
+          android:background="@color/touming"/>
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="30dp">
+        <ImageView
+            android:src="@drawable/ic_miao"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"/>
+        <TextView
+            android:textIsSelectable="true"
+            android:gravity="bottom"
+            android:layout_weight="9"
+            android:text="游客图片一览："
+            android:layout_marginTop="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            />
+
+      </LinearLayout>
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="7dp"
+          android:background="@color/touming"/>
+
+      <android.support.v7.widget.RecyclerView
+          android:layout_margin="5dp"
+          android:id="@+id/travler_pics"
+          android:layout_width="match_parent"
+          android:layout_height="100dp" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="7dp"
+          android:background="@color/touming"/>
+
+
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="30dp">
+        <ImageView
+            android:src="@drawable/ic_miao"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"/>
+        <TextView
+            android:textIsSelectable="true"
+            android:gravity="bottom"
+            android:layout_weight="9"
+            android:text="简介："
+            android:layout_marginTop="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            />
+
+      </LinearLayout>
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="7dp"
+          android:background="@color/touming"/>
+      <TextView
+          android:textIsSelectable="true"
+          android:padding="12dp"
+          android:textSize="15dp"
+          android:text="我们再来看大殿的里面，殿中供奉着 常见的横三世佛,但三世佛的前面还有三尊特殊的小佛像，我们叫做“师徒三尊”，居中的一位是藏传佛教黄教的创始人宗喀巴大师(1357--419），而宗喀巴大师就是文殊菩萨转世而来的。正因为宗略巴大师是文殊苦萨的化身，而文殊菩萨的道场又在五"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/jianjie_new_content"/>
+
+
+    </LinearLayout>
+
+  </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

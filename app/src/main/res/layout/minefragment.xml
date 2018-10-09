@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#f7f4f4"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:id="@+id/mine_not_login_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#ed286fe1"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                >
+                <ImageButton
+                    android:id="@+id/mine_my_phone"
+                    android:src="@drawable/mine_my_phone"
+                    style="@style/mine_ib_style" />
+                <ImageButton
+                    android:id="@+id/mine_my_qq"
+                    style="@style/mine_ib_style"
+                    android:src="@drawable/mine_my_qq"
+                    />
+                <ImageButton
+                    android:id="@+id/mine_my_weixin"
+                    style="@style/mine_ib_style"
+                    android:src="@drawable/mine_my_weixin"
+                    />
+            </LinearLayout>
+            <Button
+                android:id="@+id/mine_bt_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录/注册"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:background="@drawable/mine_login_bt_bg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/mine_login_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#ed286fe1"
+            android:gravity="center"
+            android:visibility="gone"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/mine_civ_user_pic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/temple_ty_couplet_twd1"
+                />
+            <TextView
+                android:id="@+id/mine_tv_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/transparent"
+                android:layout_below="@id/mine_civ_user_pic"
+                tools:text="用户名：15135810918"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="14sp"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/mine_user_center"
+                android:text="个人中心"
+                android:drawableLeft="@drawable/mine_user_center"
+                style="@style/mineTVItemStyle" />
+            <TextView
+                android:id="@+id/mine_tour_favorite"
+                android:text="旅行偏好"
+                android:drawableLeft="@drawable/mine_tour_favorite"
+                style="@style/mineTVItemStyle" />
+            <TextView
+                android:id="@+id/mine_order"
+                android:text="我的订单"
+                android:drawableLeft="@drawable/mine_order"
+                style="@style/mineTVItemStyle" />
+            <TextView
+                android:id="@+id/mine_youji"
+                android:text="我的游记"
+                android:drawableLeft="@drawable/mine_youji"
+                style="@style/mineTVItemStyle" />
+            <TextView
+                android:id="@+id/mine_history"
+                android:text="浏览历史"
+                android:drawableLeft="@drawable/mine_history"
+                style="@style/mineTVItemStyle" />
+            <TextView
+                android:id="@+id/mine_feedback"
+                android:text="反馈吐槽"
+                android:drawableLeft="@drawable/mine_feedback"
+                style="@style/mineTVItemStyle" />
+            <TextView
+                android:id="@+id/call_me"
+                android:text="联系我们"
+                android:drawableLeft="@drawable/mine_call_me"
+                style="@style/mineTVItemStyle" />
+            <TextView
+                android:id="@+id/mine_settings"
+                android:text="设置"
+                android:drawableLeft="@drawable/mine_setting"
+                style="@style/mineTVItemStyle" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#00dddddd"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f5f5"
+    tools:context=".jianjie_new.Jianjie_dadian_actiivty">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/hall_coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/jianjie_dadian_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|enterAlways|snap" />
+        </android.support.design.widget.AppBarLayout>
+    </android.support.design.widget.CoordinatorLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/hall_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_below="@id/hall_coordinator_layout"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="#004ffd"
+    />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/hall_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/hall_tab_layout"
+        />
+<!--    <com.github.clans.fab.FloatingActionMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_colorNormal="@color/rouhelan"
+        fab:menu_colorPressed="#E75043"
+        fab:menu_colorRipple="#99FFFFFF"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_labels_colorNormal="@color/touming"
+        fab:menu_labels_colorPressed="#444444"
+        fab:menu_labels_colorRipple="#66FFFFFF"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_paddingBottom="4dp"
+        fab:menu_labels_paddingLeft="8dp"
+        fab:menu_labels_paddingRight="8dp"
+        fab:menu_labels_paddingTop="4dp"
+        fab:menu_labels_position="left"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_textColor="@color/shenlan"
+        fab:menu_labels_textSize="14sp"
+        fab:menu_openDirection="up"
+        fab:menu_shadowColor="@color/touming"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_showShadow="true">
+        &lt;!&ndash;fab:menu_labels_style="@style/YourCustomLabelsStyle"&ndash;&gt;
+        &lt;!&ndash;fab:menu_fab_show_animation="@anim/my_show_animation"
+        fab:menu_fab_hide_animation="@anim/my_hide_animation"&ndash;&gt;
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/more_dadian_ben"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu"
+            app:fab_colorNormal="@color/realzi"
+            app:fab_colorPressed="@color/realCHENG"
+            fab:fab_label="更多大殿"
+            fab:fab_size="mini" />
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/yinglian_jiehsuo_ben"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_couplets"
+            app:fab_colorNormal="@color/lanlv"
+            app:fab_colorPressed="@color/colorAccent"
+            fab:fab_label="本大殿楹联"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/yunyin_jiehsuo_ben"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_play"
+            app:fab_colorNormal="@color/reaLyellow"
+            app:fab_colorPressed="@color/realblue"
+            fab:fab_label="本大殿语音解说"
+            fab:fab_size="mini" />-->
+
+
+    <!--</com.github.clans.fab.FloatingActionMenu>-->
+
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/setbackground_jianjie"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_pic_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:adjustViewBounds="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:id="@+id/foxiang_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+        <LinearLayout
+            android:id="@+id/need_move"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <ImageView
+                android:src="@drawable/ic_miao"
+                android:layout_weight="1"
+                android:layout_marginTop="2dp"
+                android:layout_width="0dp"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"/>
+            <TextView
+                android:textIsSelectable="true"
+                android:id="@+id/name_jiejie_simiao"
+                android:gravity="bottom"
+                android:layout_weight="9"
+                android:text="显通寺简介："
+                android:layout_marginTop="2dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:textIsSelectable="true"
+            android:id="@+id/simiao_jianjietext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:scrollbars="vertical"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+</LinearLayout>

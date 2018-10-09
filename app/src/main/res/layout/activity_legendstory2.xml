@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Stroy.legendstory2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="显通寺的乳名——大久全寺"
+            android:textColor="#000000"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:background="@drawable/sucai3"/>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:scrollbars="vertical"
+            android:text="         显通寺在佛教界有一个不大为外人所知的绰号，叫“大久全寺”，宏大的大、悠久的久、齐全的全，“大、 久、全”三个字应该说大体概括了显通寺的特点。
+大是指规模大、名望大。从面积上说，显通寺占地43700平方米，殿字楼堂400多间，是五台山最大的寺院。 从单体建筑上来说，显通寺有着五台山最大的大雄宝殿、最大的钟楼、最大的斋堂、最大的禅堂、最大的罗汉堂、最大的铜钟、最大的云板，就连这边的粮仓也是最大的，它过去叫“蒙楼”，据说抗日战争时，显通寺- - 次捐粮就达3万石，民间有“显通寺关门三年也饿不着”的说法，现在这里已经改造成为“佛国藏珍楼”，是五台山最大的文物展览馆。显通寺还是五台山最大的宗教权力中心，旁边这座院子就是五台山佛教协会和五台山宗教局的所在地，历史上除了清朝等个别时期，显通寺都是五台山的宗教政治中心。
+         再来说久。久是说历史久。显通寺的历史几乎和中国佛教同步。佛教在西汉哀帝元年也就是公元前2年传入中国，到了政治清明、天下安定的东汉明帝时期，佛教迎来了一次关键的发展机遇。汉明帝永平七年的一天晚上,明帝刘庄夜宿南宫，梦见一个身高丈六、头顶放光的金人从西方飞去。绕着宫殿飞行一圈后又向西方飞去。第二天早上，明帝把这个梦告诉大臣们， 其中有个叫传毅的博士告诉他，这个金人可能是西方的神，叫作佛。明帝于是派察愔和秦景等十几个人出使西域拜佛求经。永平八年，他们在现在的阿富汗一带遇到了印度高僧摄摩腾和竺法兰。于是诚悬邀请二位高僧到中国传播佛教。永平十年，二位高僧用白马驮着经书和佛像来到东汉的首都洛阳。 明帝十分高兴，安排他们住在鸿护寺，也就是外交部。永平十一年(公元68年)，汉明帝下令任洛阳西雍门外兴建中国历史上第一座佛教寺院，为了纪念白马驮经，又因为二位高僧的居住地是鸿胪寺，所以命名为“白马寺”。从此，“寺” 成了佛教活动场所的专用名词。也就是在这一年，摄摩腾和竺法兰云游天下来到了五台山，他们看到这里五峰环抱，气象非凡，五峰之中一峰突起，简直就是印度佛教圣地灵鸳峰的翻版，况且山下还有阿育王设立的释迦牟尼佛祖舍利塔，真是个天造地设的佛教圣地。于是回去后马上奏请汉明帝任五台山建立寺院，取名大孚灵驚寺，大孚两个字是弘扬和信仰的意思，是汉明帝刘庄特意加在寺名前面的。大孚灵鹭寺就是现在显通寺的前身。因此，晁通寺不仅是五台山的开山祖寺，也是中国佛教史上仅晚于白马寺的第二座寺院，和白马寺-起被称为中国佛教的祖庭。为了纪念摄摩腾和竺法兰二位高僧，显通寺还创立了一个全国独一无二的宗派一-摩法宗， 其法脉一直延续至今。当然，也有专家和学者认为显通寺的始建年代应该是在东汉之后的南北朝时期，在这种说法没有形成共识之前，我们这里仍然沿袭佛教界的东汉说。北魏时期显通寺改名花园寺，迎米了历史上第一一个鼎盛时期:唐代改名大华严寺，成为中国最早、最大的国际性佛教道场;明代初期改名大显通寺，万历年间塔院寺独立出去以后，改名为大护国圣光永明寺;清代又复名大显通寺至今。
+最后说全，全是说功能全。显通寺的全体现在六个方面，即“殿全、铜全、佛全、景全、文殊全、宗派全”。五台山古十景，仅显通寺就可以看到华严字塔、大社铜牛、五郎铁棍、玉花罗汉、山西土地、显通铜毁这六景; “宗派全”，显通寺历史上不仅驻锡过天台、法相、三论、华严、唯识、净士、禅、密等汉传.佛教八大宗派以及藏传佛教的高僧，而且延续着-一个全国独一无二的宗派一--摩法宗。
+
+"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout tools:context=".yinglian.YinglianDetal" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+  <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical">
+
+
+    <android.support.design.widget.CoordinatorLayout android:layout_height="match_parent" android:layout_width="match_parent">
+
+
+      <android.support.design.widget.AppBarLayout android:layout_height="wrap_content" android:layout_width="match_parent">
+
+        <android.support.v7.widget.Toolbar android:layout_height="35dp" android:layout_width="match_parent" app:layout_scrollFlags="scroll|enterAlways|snap" android:background="@color/rouhelan" android:id="@+id/yinglian_toolbar"> </android.support.v7.widget.Toolbar>
+
+      </android.support.design.widget.AppBarLayout>
+
+
+      <android.support.v4.widget.NestedScrollView android:layout_height="match_parent" android:layout_width="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical">
+
+
+          <LinearLayout android:layout_height="30dp" android:layout_width="match_parent" android:orientation="horizontal">
+
+            <ImageView android:layout_height="match_parent" android:layout_width="0dp" android:src="@drawable/ic_miao" android:layout_weight="1" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"/>
+
+            <TextView android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="9" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:text="实拍楹联图：" android:gravity="bottom"/>
+
+          </LinearLayout>
+
+          <View android:layout_height="7dp" android:layout_width="match_parent" android:background="@color/touming"/>
+
+          <ImageView android:layout_height="270dp" android:layout_width="match_parent" android:id="@+id/shipa_yinglian" android:scaleType="centerCrop"/>
+
+          <View android:layout_height="7dp" android:layout_width="match_parent" android:background="@color/touming"/>
+
+
+          -<LinearLayout android:layout_height="30dp" android:layout_width="match_parent" android:orientation="horizontal">
+
+          <ImageView android:layout_height="match_parent" android:layout_width="0dp" android:src="@drawable/ic_miao" android:layout_weight="1" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"/>
+
+          <TextView android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="5" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:text="所属寺庙：" android:gravity="bottom"/>
+
+          <TextView android:layout_height="match_parent" android:layout_width="0dp" android:id="@+id/simiao_yinglian" android:layout_weight="7" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:gravity="bottom"/>
+
+        </LinearLayout>
+
+          <View android:layout_height="7dp" android:layout_width="match_parent" android:background="@color/touming"/>
+
+
+          -<LinearLayout android:layout_height="30dp" android:layout_width="match_parent" android:orientation="horizontal">
+
+          <ImageView android:layout_height="match_parent" android:layout_width="0dp" android:src="@drawable/ic_miao" android:layout_weight="1" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"/>
+
+          <TextView android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="5" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:text="所在大殿：" android:gravity="bottom"/>
+
+          <TextView android:layout_height="match_parent" android:layout_width="0dp" android:id="@+id/dadian_yinglian" android:layout_weight="7" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:gravity="bottom"/>
+
+        </LinearLayout>
+
+          <View android:layout_height="7dp" android:layout_width="match_parent" android:background="@color/touming"/>
+
+
+          -<LinearLayout android:layout_height="30dp" android:layout_width="match_parent" android:orientation="horizontal">
+
+          <ImageView android:layout_height="match_parent" android:layout_width="0dp" android:src="@drawable/ic_miao" android:layout_weight="1" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"/>
+
+          <TextView android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="5" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:text="书法家及撰联作者：" android:gravity="bottom"/>
+
+          <TextView android:layout_height="match_parent" android:layout_width="0dp" android:id="@+id/writer_yinglian" android:layout_weight="7" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:gravity="bottom"/>
+
+        </LinearLayout>
+
+          <View android:layout_height="7dp" android:layout_width="match_parent" android:background="@color/touming"/>
+
+
+          -<LinearLayout android:layout_height="30dp" android:layout_width="match_parent" android:orientation="horizontal">
+
+          <ImageView android:layout_height="match_parent" android:layout_width="0dp" android:src="@drawable/ic_miao" android:layout_weight="1" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"/>
+
+          <TextView android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="5" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:text="楹联大小：" android:gravity="bottom"/>
+
+          <TextView android:layout_height="match_parent" android:layout_width="0dp" android:id="@+id/size_yinglian" android:layout_weight="7" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:gravity="bottom"/>
+
+        </LinearLayout>
+
+          <View android:layout_height="7dp" android:layout_width="match_parent" android:background="@color/touming"/>
+
+
+          -<LinearLayout android:layout_height="30dp" android:layout_width="match_parent" android:orientation="horizontal">
+
+          <ImageView android:layout_height="match_parent" android:layout_width="0dp" android:src="@drawable/ic_miao" android:layout_weight="0.8" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"/>
+
+          <TextView android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="9" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:text="辨认后简化字体：" android:gravity="bottom"/>
+
+        </LinearLayout>
+
+          <View android:layout_height="7dp" android:layout_width="match_parent" android:background="@color/touming"/>
+
+          <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/font_yinglian" android:textSize="15dp" android:padding="7dp"/>
+
+          <View android:layout_height="7dp" android:layout_width="match_parent" android:background="@color/touming"/>
+
+
+          -<LinearLayout android:layout_height="30dp" android:layout_width="match_parent" android:orientation="horizontal">
+
+          <ImageView android:layout_height="match_parent" android:layout_width="0dp" android:src="@drawable/ic_miao" android:layout_weight="0.8" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"/>
+
+          <TextView android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="9" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:text="整体翻译：" android:gravity="bottom"/>
+
+        </LinearLayout>
+
+          <View android:layout_height="7dp" android:layout_width="match_parent" android:background="@color/touming"/>
+
+          <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/zhiyi_yinglian" android:textSize="15dp" android:padding="7dp"/>
+
+          <View android:layout_height="7dp" android:layout_width="match_parent" android:background="@color/touming"/>
+
+
+          -<LinearLayout android:layout_height="30dp" android:layout_width="match_parent" android:orientation="horizontal">
+
+          <ImageView android:layout_height="match_parent" android:layout_width="0dp" android:src="@drawable/ic_miao" android:layout_weight="1" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"/>
+
+          <TextView android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="5" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:text="所属类别：" android:gravity="bottom"/>
+
+          <TextView android:layout_height="match_parent" android:layout_width="0dp" android:id="@+id/type_yinglian" android:layout_weight="7" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:gravity="bottom"/>
+
+        </LinearLayout>
+
+          <View android:layout_height="7dp" android:layout_width="match_parent" android:background="@color/touming"/>
+
+
+          -<LinearLayout android:layout_height="30dp" android:layout_width="match_parent" android:orientation="horizontal">
+
+          <ImageView android:layout_height="match_parent" android:layout_width="0dp" android:src="@drawable/ic_miao" android:layout_weight="0.8" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"/>
+
+          <TextView android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="9" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:text="本联释义：" android:gravity="bottom"/>
+
+        </LinearLayout>
+
+          <View android:layout_height="7dp" android:layout_width="match_parent" android:background="@color/touming"/>
+
+          <android.support.v7.widget.RecyclerView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/shiyi_show"> </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+      </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+  </LinearLayout>
+
+
+  -<LinearLayout android:layout_height="40dp" android:layout_width="match_parent" android:orientation="horizontal" android:background="@color/rouhelan" android:layout_alignParentBottom="true">
+
+
+  -<android.support.v7.widget.CardView android:layout_height="match_parent" android:layout_width="wrap_content" android:layout_weight="11" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:layout_marginRight="3dp" android:layout_marginLeft="10dp" android:focusableInTouchMode="true" android:focusable="true">
+
+  <EditText android:layout_height="match_parent" android:layout_width="match_parent" android:background="@null"
+      android:textColor="#000000" android:shadowColor="@color/realgray" android:hint="留下你的建议" android:singleLine="true"/>
+
+</android.support.v7.widget.CardView>
+
+  <ImageView android:layout_height="match_parent" android:layout_width="wrap_content" android:id="@+id/more_review" android:src="@drawable/ic_review_test" android:layout_weight="1" android:layout_margin="5dp"/>
+
+  <ImageView android:layout_height="match_parent" android:layout_width="wrap_content"
+      android:src="@drawable/ic_shoucang" android:layout_weight="1" android:layout_margin="5dp"/>
+
+</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="wutaishan"/>
+    <version value="11"/>
+    <list>
+        <mapping class ="com.example.wutai.wutaimoutain.init.Dadian"/>
+        <mapping class ="com.example.wutai.wutaimoutain.init.Yinglian"/>
+        <mapping class ="com.example.wutai.wutaimoutain.init.SimiaoItem"/>
+        <mapping class="com.example.wutai.wutaimoutain.init.Shiyi"/>
+        <mapping class="com.example.wutai.wutaimoutain.init.FoJiaowenhua"/>
+        <mapping class="com.example.wutai.wutaimoutain.init.Chuanshuo"/>
+    </list>
+
+</litepal>
