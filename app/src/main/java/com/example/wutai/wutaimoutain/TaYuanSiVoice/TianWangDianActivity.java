@@ -48,9 +48,9 @@ public class TianWangDianActivity extends AppCompatActivity {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
         collapsingToolbarLayout.setTitle("天王殿");
-        collapsingToolbarLayout.setCollapsedTitleTextColor(getResources().getColor(R.color.dingxiangse));
+        collapsingToolbarLayout.setCollapsedTitleTextColor(getResources().getColor(R.color.black));
         collapsingToolbarLayout.setExpandedTitleMarginBottom(10);
-        collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(R.color.colorAccent));
+        collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(R.color.black));
         Glide.with(mContex).load(R.mipmap.tian_wang_dian_voice).into(showImgView);
         String content = mContex.getString(R.string.tian_wang_dian_text);
         voiceContent.setText(content);

@@ -3,6 +3,7 @@ package com.example.wutai.wutaimoutain.yinglian;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -68,6 +69,7 @@ public class YinglianDetal extends AppCompatActivity {
         simiao.setText(intent.getStringExtra("simiao"));
         dadain.setText(intent.getStringExtra("dadian"));
         recyclerView = (RecyclerView)findViewById(R.id.shiyi_show);
+        recyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
         setadapter(shiyis);
         Glide.with(YinglianDetal.this).load(R.drawable.shipai_yl).into(shipai_pic);
     }

@@ -9,7 +9,7 @@
 
   <android.support.design.widget.CoordinatorLayout
       android:layout_width="match_parent"
-      android:layout_height="wrap_content">
+      android:layout_height="match_parent">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -18,7 +18,8 @@
           android:id="@+id/stroy_toolbar_getin1"
           android:layout_width="match_parent"
           android:layout_height="match_parent"
-          app:layout_scrollFlags="scroll|enterAlways|snap">
+          style="@style/ToolbarStyle"
+          >
       </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
 
@@ -30,74 +31,28 @@
           android:layout_width="match_parent"
           android:layout_height="match_parent"
           android:orientation="vertical">
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:gravity="center"
-            android:orientation="horizontal">
-          <TextView
-              android:textIsSelectable="true"
-              android:id="@+id/title"
-              android:layout_width="wrap_content"
-              android:layout_height="30dp"
-              android:text="五台轶事"
-              android:textColor="#3A5FCD"
-              android:textSize="20dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:background="#E5E5E5">
-          <EditText
-              android:id="@+id/editText"
-              android:layout_width="300dp"
-              android:layout_height="30dp"
-              android:layout_gravity="center"
-              android:layout_weight="1"
-              android:background="@drawable/shape_sousuo"
-              android:ems="10"
-              android:gravity="center"
-              android:hint="请输入查找内容"
-              android:textColorHint="#666666"
-              android:textSize="8dp" />
-
-          <Button
-              android:id="@+id/Button2"
-              android:layout_width="20dp"
-              android:layout_height="30dp"
-              android:layout_gravity="center"
-              android:layout_weight="1"
-              android:background="#0000"
-              android:text="搜索"
-              android:textColor="#3A5FCD"
-              android:textSize="13dp" />
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="220dp"
+            android:layout_height="wrap_content"
             android:gravity="center">
 
           <ImageView
               android:id="@+id/title_show"
               android:layout_width="match_parent"
-              android:layout_height="220dp"
-              android:scaleType="fitXY" />
-
+              android:layout_height="wrap_content"
+              android:scaleType="fitXY"
+              android:adjustViewBounds="true"
+              />
         </LinearLayout>
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical">
-
           <LinearLayout
               android:layout_width="fill_parent"
-              android:layout_height="280dp"
+              android:layout_height="wrap_content"
               android:orientation="vertical">
 
             <Button
@@ -120,7 +75,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
               <LinearLayout
                   android:id="@+id/ll_1"
@@ -132,7 +87,8 @@
                 <ImageView
                     android:scaleType="centerCrop"
                     android:id="@+id/src1_chuanshuo1"
-                    android:layout_width="70dp"
+                    android:padding="3dp"
+                    android:layout_width="80dp"
                     android:layout_height="80dp" />
                 <TextView
                     android:id="@+id/chuanshuo1"
@@ -142,6 +98,7 @@
                     android:layout_marginLeft="10dp"
                     android:gravity="center_vertical"
                     android:text="塔院寺--大白塔的建造"
+                    android:textColor="#4b4242"
                     android:textSize="16dp" />
 
 
@@ -162,7 +119,8 @@
                 <ImageView
                     android:scaleType="centerCrop"
                     android:id="@+id/src1_chuanshuo2"
-                    android:layout_width="70dp"
+                    android:padding="3dp"
+                    android:layout_width="80dp"
                     android:layout_height="80dp" />
 
                 <TextView
@@ -171,6 +129,7 @@
                     android:layout_height="80dp"
                     android:layout_gravity="left"
                     android:layout_marginLeft="10dp"
+                    android:textColor="#4b4242"
                     android:gravity="center_vertical"
                     android:text="菩萨顶——宗喀巴大师与黄教"
                     android:textSize="16dp" />
@@ -191,7 +150,8 @@
                 <ImageView
                     android:scaleType="centerCrop"
                     android:id="@+id/src1_chuanshuo3"
-                    android:layout_width="70dp"
+                    android:padding="3dp"
+                    android:layout_width="80dp"
                     android:layout_height="80dp" />
 
                 <TextView
@@ -199,6 +159,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="80dp"
                     android:layout_gravity="left"
+                    android:textColor="#4b4242"
                     android:layout_marginLeft="10dp"
                     android:gravity="center_vertical"
                     android:text="显通寺——康熙皇帝与无字碑"
@@ -246,7 +207,8 @@
                 <ImageView
                     android:scaleType="centerCrop"
                     android:id="@+id/src_fojiao1"
-                    android:layout_width="70dp"
+                    android:padding="3dp"
+                    android:layout_width="80dp"
                     android:layout_height="80dp"/>
 
                 <TextView
@@ -254,6 +216,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="80dp"
                     android:layout_gravity="left"
+                    android:textColor="#4b4242"
                     android:layout_marginLeft="10dp"
                     android:gravity="center_vertical"
                     android:text="佛教基本知识"
@@ -276,7 +239,8 @@
                 <ImageView
                     android:scaleType="centerCrop"
                     android:id="@+id/src_fojiao2"
-                    android:layout_width="70dp"
+                    android:padding="3dp"
+                    android:layout_width="80dp"
                     android:layout_height="80dp"/>
 
                 <TextView
@@ -287,6 +251,7 @@
                     android:layout_marginLeft="10dp"
                     android:gravity="center_vertical"
                     android:text="信教行为过程"
+                    android:textColor="#4b4242"
                     android:textSize="16dp" />
               </LinearLayout>
 
@@ -305,7 +270,8 @@
                 <ImageView
                     android:scaleType="centerCrop"
                     android:id="@+id/src_fojiao3"
-                    android:layout_width="70dp"
+                    android:padding="3dp"
+                    android:layout_width="80dp"
                     android:layout_height="80dp" />
 
                 <TextView
@@ -315,6 +281,7 @@
                     android:layout_gravity="left"
                     android:layout_marginLeft="10dp"
                     android:gravity="center_vertical"
+                    android:textColor="#4b4242"
                     android:text="文殊菩萨"
                     android:textSize="16dp" />
 
@@ -335,7 +302,8 @@
                 <ImageView
                     android:scaleType="centerCrop"
                     android:id="@+id/src_fojiao4"
-                    android:layout_width="70dp"
+                    android:padding="3dp"
+                    android:layout_width="80dp"
                     android:layout_height="80dp" />
 
                 <TextView
@@ -345,6 +313,7 @@
                     android:layout_gravity="left"
                     android:layout_marginLeft="10dp"
                     android:gravity="center_vertical"
+                    android:textColor="#4b4242"
                     android:text="药佛师"
                     android:textSize="16dp" />
               </LinearLayout>

@@ -48,9 +48,9 @@ public class DaCangJingGeActivity extends AppCompatActivity {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
         collapsingToolbarLayout.setTitle("藏经阁");
-        collapsingToolbarLayout.setCollapsedTitleTextColor(getResources().getColor(R.color.dingxiangse));
+        collapsingToolbarLayout.setCollapsedTitleTextColor(getResources().getColor(R.color.black));
         collapsingToolbarLayout.setExpandedTitleMarginBottom(10);
-        collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(R.color.colorAccent));
+        collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(R.color.black));
         Glide.with(mContex).load(R.mipmap.da_cang_jing_ge_voice).into(showImgView);
         String content = mContex.getString(R.string.da_cang_jing_ge_text);
         voiceContent.setText(content);

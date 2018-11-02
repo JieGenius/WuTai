@@ -28,6 +28,9 @@ import com.example.wutai.wutaimoutain.init.SimiaoItem;
 import com.example.wutai.wutaimoutain.jianjie_new.Jianjie_dadian_actiivty;
 import com.example.wutai.wutaimoutain.jianjie_new.Jianjie_new_activity;
 import com.example.wutai.wutaimoutain.jianjie_new.Traver_pic;
+import com.example.wutai.wutaimoutain.navigation.BiShanSiActivity;
+import com.example.wutai.wutaimoutain.navigation.LuoHouSiActivity;
+import com.example.wutai.wutaimoutain.navigation.PuSaDingActivity;
 import com.example.wutai.wutaimoutain.navigation.TaYuanSiActivity;
 import com.example.wutai.wutaimoutain.navigation.XianTongSiActivity;
 import com.example.wutai.wutaimoutain.yinglian.Yinglian;
@@ -115,7 +118,7 @@ public class Every_Simiao_Activity extends AppCompatActivity {
         });
         ev_yunyin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) {//大殿简介
                 if(name_simiao.equals("显通寺")||name_simiao.equals("菩萨顶")||name_simiao.equals("碧山寺")||name_simiao.equals("塔院寺")||name_simiao.equals("罗睺寺")){
                     Jianjie_dadian_actiivty.actionstart1(Every_Simiao_Activity.this,name_simiao,name_simiao);
                 }
@@ -136,6 +139,18 @@ public class Every_Simiao_Activity extends AppCompatActivity {
                 }
                 else if(name_simiao.equals("显通寺")){
                     Intent intent = new Intent(Every_Simiao_Activity.this, XianTongSiActivity.class);
+                    startActivity(intent);
+                }
+                else if(name_simiao.equals("菩萨顶")){
+                    Intent intent = new Intent(Every_Simiao_Activity.this, PuSaDingActivity.class);
+                    startActivity(intent);
+                }
+                else if(name_simiao.equals("碧山寺")){
+                    Intent intent = new Intent(Every_Simiao_Activity.this, BiShanSiActivity.class);
+                    startActivity(intent);
+                }
+                else if(name_simiao.equals("罗睺寺")){
+                    Intent intent = new Intent(Every_Simiao_Activity.this, LuoHouSiActivity.class);
                     startActivity(intent);
                 }
                 else Toast.makeText(Every_Simiao_Activity.this,"暂时没有数据",Toast.LENGTH_SHORT).show();

@@ -21,7 +21,7 @@ import java.util.List;
 
 public class Single_stroy_activity extends AppCompatActivity  {
     private TextView title;
-    private TextView editText;
+    //private TextView editText;
     private TextView chuanshuo1;
     private TextView chuanshuo2;
     private TextView chuanshuo3;
@@ -29,9 +29,6 @@ public class Single_stroy_activity extends AppCompatActivity  {
     private TextView fojiao2;
     private TextView fojiao3;
     private TextView fojiao4;
-
-
-    private Button Button2;
     private Button Button3;
     private Button Button4;
 
@@ -182,15 +179,26 @@ public class Single_stroy_activity extends AppCompatActivity  {
         Glide.with(Single_stroy_activity.this).load(chuanshuopic_id[chuanshuopic_id.length-1]).into(src1_chuanshuo1);
         Glide.with(Single_stroy_activity.this).load(chuanshuopic_id[chuanshuopic_id.length-2]).into(src1_chuanshuo2);
         Glide.with(Single_stroy_activity.this).load(chuanshuopic_id[chuanshuopic_id.length-3]).into(src1_chuanshuo3);
-        System.out.println(foJiaowenhuas.get(0).getId_foujiao()+"*/-----------*/");
         chuanshuo1.setText(chuanshuonames[chuanshuonames.length-1]);
         chuanshuo2.setText(chuanshuonames[chuanshuonames.length-2]);
         chuanshuo3.setText(chuanshuonames[chuanshuonames.length-3]);
+        if(chuanshuos.size()==0){
+            Lll_1.setVisibility(View.GONE);
+            Lll_2.setVisibility(View.GONE);
+            Lll_3.setVisibility(View.GONE);
+        }
+        else if(chuanshuos.size()==1){
+            Lll_1.setVisibility(View.GONE);
+            Lll_2.setVisibility(View.GONE);
+        }
+        else if(chuanshuos.size()==2){
+            Lll_1.setVisibility(View.GONE);
+        }
 
     }
     public void initview(){
         title=(TextView)findViewById(R.id.title);
-        editText=(TextView)findViewById(R.id.editText);
+        //editText=(TextView)findViewById(R.id.editText);
         chuanshuo1=(TextView)findViewById(R.id.chuanshuo1);
         chuanshuo2=(TextView)findViewById(R.id.chuanshuo2);
         chuanshuo3=(TextView)findViewById(R.id.chuanshuo3);
@@ -201,7 +209,7 @@ public class Single_stroy_activity extends AppCompatActivity  {
 
 
 
-        Button2 = (Button)findViewById(R.id.Button2);
+        //Button2 = (Button)findViewById(R.id.Button2);
         Button3 = (Button)findViewById(R.id.Button3);
         Button4 = (Button)findViewById(R.id.Button4);
 

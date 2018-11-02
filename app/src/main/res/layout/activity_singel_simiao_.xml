@@ -69,14 +69,14 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="12dp"
-                android:background="@color/realgray" />
+                android:layout_height="4dp"
+                android:background="#ded4d4" />
 
             <include layout="@layout/center_everysimiao" />
             <View
                 android:layout_width="match_parent"
-                android:layout_height="12dp"
-                android:background="@color/realgray" />
+                android:layout_height="4dp"
+                android:background="#ded4d4" />
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
@@ -101,8 +101,8 @@
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:background="@color/realgray"/>
+                android:layout_height="4dp"
+                android:background="#ded4d4" />
             <android.support.v7.widget.CardView
                 android:layout_margin="10dp"
                 android:layout_width="match_parent"

@@ -2,6 +2,7 @@ package com.example.wutai.wutaimoutain.mine;
 
 import android.Manifest;
 import android.annotation.TargetApi;
+import android.app.ProgressDialog;
 import android.content.ContentUris;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -90,6 +91,7 @@ public class userCenterActivity extends AppCompatActivity {
     private Uri imageUri;
     private File cropFile;
     private Bitmap bitmap;
+    ProgressDialog progressDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -118,7 +120,6 @@ public class userCenterActivity extends AppCompatActivity {
                                 else{
                                     bitmap = ((BitmapDrawable)drawable).getBitmap();
                                 }
-
                                 Intent intent = new Intent(userCenterActivity.this,ShowOnePictureActivity.class);
                                 intent.putExtra("bitmap",bitmap);
                                 startActivity(intent);
@@ -157,6 +158,16 @@ public class userCenterActivity extends AppCompatActivity {
                     mineUserCenterEtSex.setText(userMessage.getSex());
                     mineUserCenterEtJob.setText(userMessage.getJob());
                     mineUserCenterEtDatingDeclaration.setText(userMessage.getIntroduction());
+                }
+                else if(msg.what == 5){
+                    Toast.makeText(getApplicationContext(),"保存成功",Toast.LENGTH_SHORT).show();
+                    progressDialog.dismiss();
+                    finish();
+                }
+                else if(msg.what == 4){
+                    Toast.makeText(getApplicationContext(),"保存失败",Toast.LENGTH_SHORT).show();
+                    progressDialog.dismiss();
+                    finish();
                 }
             }
         };
@@ -302,6 +313,9 @@ public class userCenterActivity extends AppCompatActivity {
                 Log.e(TAG, "onKeyDown: 有更改头像记录，更改后的头像数据流的大小为："+UserInfo.bitmap2Stream(bitmap).length() );
             }
             editor.apply();
+
+            progressDialog = ProgressDialog.show(this,null,"数据保存中，请稍后",true,false);
+
             new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -319,19 +333,24 @@ public class userCenterActivity extends AppCompatActivity {
                     client.newBuilder().readTimeout(50000, TimeUnit.MILLISECONDS).build().newCall(request).enqueue(new Callback() {
                         @Override
                         public void onFailure(Call call, IOException e) {
+                            handler.sendEmptyMessage(4);
                             Log.e(TAG, "onFailure: " + e);
                         }
 
                         @Override
                         public void onResponse(Call call, Response response) throws IOException {
+                            handler.sendEmptyMessage(5);
                             Log.e(TAG, "onResponse: " + response.body().string());
                         }
                     });
                 }
             }).start();
+            return false;
+        }
+        else{
+            return super.onKeyDown(keyCode, event);
         }
 
-        return super.onKeyDown(keyCode, event);
     }
 
     @Override

@@ -4,11 +4,13 @@ import android.app.Activity;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.ActivityCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
 import com.example.wutai.wutaimoutain.R;
 
-public class ShowOnePictureActivity extends Activity {
+public class ShowOnePictureActivity extends AppCompatActivity {
     private ImageView imageView;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

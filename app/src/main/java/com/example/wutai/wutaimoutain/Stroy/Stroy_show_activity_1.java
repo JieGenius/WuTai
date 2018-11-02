@@ -2,6 +2,7 @@ package com.example.wutai.wutaimoutain.Stroy;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -44,7 +45,8 @@ public class Stroy_show_activity_1 extends AppCompatActivity {
         });
         intent = getIntent();
         collapsingToolbarLayout.setTitle(intent.getStringExtra("name"));
-        collapsingToolbarLayout.setCollapsedTitleTextColor(getResources().getColor(R.color.realred));
+        //collapsingToolbarLayout.setCollapsedTitleTextColor(getResources().getColor(R.color.white));
+        collapsingToolbarLayout.setExpandedTitleTextColor(ColorStateList.valueOf(getResources().getColor(R.color.white)));
         if (intent.getStringExtra("type").equals("传说")) {
             name = Query_wu.query_chuanshuo1(intent.getStringExtra("name"));
             System.out.println(name.get(0).getChuanshuopic_id());

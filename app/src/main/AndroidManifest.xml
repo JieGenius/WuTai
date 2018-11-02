@@ -79,7 +79,7 @@
         <activity android:name=".yinglian.Yinglian" />
         <activity
             android:name=".yinglian.YinglianDetal"
-            android:label=""
+            android:label="楹联详细信息"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Stroy.Stroy_Activity"
@@ -88,12 +88,18 @@
         <activity
             android:name=".yinglian.YinglianShowActivity"
             android:theme="@style/ManYouWutaiTheme" />
-        <activity android:name=".Stroy.legendstory1" />
-        <activity android:name=".Stroy.legendstory2" />
-        <activity android:name=".Stroy.legendstory3" />
-        <activity android:name=".Stroy.legendstory4" />
-        <activity android:name=".Stroy.legendstory5" />
-        <activity android:name=".Stroy.legendstory6" />
+        <activity android:name=".Stroy.legendstory1"
+            android:theme="@style/ManYouWutaiTheme"/>
+        <activity android:name=".Stroy.legendstory2"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Stroy.legendstory3"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Stroy.legendstory4"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Stroy.legendstory5"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Stroy.legendstory6"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".Stroy.Single_stroy_activity"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -106,7 +112,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Stroy.Stroy_show_activity_1"
-            android:theme="@style/Theme.Design.Light.NoActionBar" />
+            android:theme="@style/ManYouWutaiTheme" />
         <activity
             android:name=".navigation.NavigationHomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />

@@ -92,7 +92,7 @@ public class TaYuanSiActivity extends AppCompatActivity implements View.OnClickL
     public boolean onMenuItemClick(MenuItem item) {
         switch (item.getItemId()){
             case R.id.DCJG_yinglian_detail:
-                YinglianShowActivity  .actionstart(TaYuanSiActivity.this,name,"大藏经阁");
+                YinglianShowActivity.actionstart(TaYuanSiActivity.this,name,"大藏经阁");
                 break;
             case R.id.DCJG_voice_desc:
                 startActivity(new Intent(TaYuanSiActivity.this, DaCangJingGeActivity.class));
