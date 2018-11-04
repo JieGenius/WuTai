@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mine.ContractUs">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/contract_us_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:title="联系我们">
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="“印象·五台山”智能导览APP，不仅适应了我省旅游业的迅速发展，也抓住了APP的流行契机，有巨大的市场潜力。此选题也是一个可延续性的项目，可以利用这次的经验和APP的便利性，推广到其它寺庙文化研究当中，服务于寺庙旅游导览。除此之外，我们还会与用户及时的交流反馈，做好改进和维护的工作。"
+            android:padding="20dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="#484242"
+            />
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="#484242"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:text="欢迎你给我们即时提供建议"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#484242"
+            android:textSize="18sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="如有反馈"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#484242"
+            android:textSize="18sp"
+            android:padding="20dp"
+            android:text="请发送至邮箱2471900742@qq.com。"
+            />
+
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

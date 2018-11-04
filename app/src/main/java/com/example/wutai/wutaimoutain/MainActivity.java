@@ -2,13 +2,15 @@ package com.example.wutai.wutaimoutain;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.widget.SearchView;
@@ -32,10 +34,12 @@ import com.example.wutai.wutaimoutain.Services.services;
 import com.example.wutai.wutaimoutain.Talk.AllTalk;
 import com.example.wutai.wutaimoutain.allsimiaos.MoveDBFile;
 import com.example.wutai.wutaimoutain.init.Setall;
+import com.example.wutai.wutaimoutain.mine.ContractUs;
 import com.example.wutai.wutaimoutain.mine.LoginActivity;
+import com.example.wutai.wutaimoutain.mine.SettingActivity;
 import com.example.wutai.wutaimoutain.mine.UserInfo;
 import com.example.wutai.wutaimoutain.myfragment.HomeFragment;
-import com.example.wutai.wutaimoutain.myfragment.MapFragmnet;
+import com.example.wutai.wutaimoutain.myfragment.BudCulFragmnet;
 import com.example.wutai.wutaimoutain.myfragment.MineFragmnet;
 import com.example.wutai.wutaimoutain.sendTalk.SendTalkActivity;
 import com.google.gson.Gson;
@@ -61,18 +65,19 @@ public class MainActivity extends AppCompatActivity
     int lastSelectedPosition = 0;
     private HomeFragment homeFragment;
     private MineFragmnet mineFragmnet;
-    private MapFragmnet mapFragmnet;
+    private BudCulFragmnet budCulFragmnet;
     private com.example.wutai.wutaimoutain.myfragment.TalkFragment talkFragment;
     private SharedPreferences sharedPreferences;
     private NavigationView navigationView;
     private long currentTime = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.main_toolbar);
         setSupportActionBar(toolbar);
-        sharedPreferences = getSharedPreferences("user_message",Context.MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences("user_message", Context.MODE_PRIVATE);
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -105,15 +110,14 @@ public class MainActivity extends AppCompatActivity
             public void onDrawerOpened(@NonNull View drawerView) {
 
                 TextView userPhoneNumber = navigationView.findViewById(R.id.nav_tv_user_phone);
-                TextView  userName = navigationView.findViewById(R.id.nav_tv_user_name);
+                TextView userName = navigationView.findViewById(R.id.nav_tv_user_name);
                 CircleImageView imageView = navigationView.findViewById(R.id.nav_civ_user_head_pic);
-                userPhoneNumber.setText("TEL:"+sharedPreferences.getString("phone","8888"));
-                userName.setText("用户名："+sharedPreferences.getString("name","游客"));
-                if(UserInfo.stream2Drawable(sharedPreferences.getString("userPicture",""))!=null){
-                    imageView.setImageDrawable(UserInfo.stream2Drawable(sharedPreferences.getString("userPicture","")));
-                }
-                else{
-                    imageView.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.default_head_pic));
+                userPhoneNumber.setText("TEL:" + sharedPreferences.getString("phone", "8888"));
+                userName.setText("用户名：" + sharedPreferences.getString("name", "游客"));
+                if (UserInfo.stream2Drawable(sharedPreferences.getString("userPicture", "")) != null) {
+                    imageView.setImageDrawable(UserInfo.stream2Drawable(sharedPreferences.getString("userPicture", "")));
+                } else {
+                    imageView.setImageBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.default_head_pic));
                 }
             }
 
@@ -139,28 +143,28 @@ public class MainActivity extends AppCompatActivity
         switch (position) {
             case 0:
                 if (homeFragment == null) {
-                    lastSelectedPosition=0;
+                    lastSelectedPosition = 0;
                     homeFragment = homeFragment.newInstance("首页");
                 }
                 transaction.replace(R.id.tb, homeFragment);
                 break;
             case 1:
                 if (talkFragment == null) {
-                    lastSelectedPosition=1;
+                    lastSelectedPosition = 1;
                     talkFragment = talkFragment.newInstance("漫游五台");
                 }
                 transaction.replace(R.id.tb, talkFragment);
                 break;
             case 2:
-                if (mapFragmnet == null) {
-                    lastSelectedPosition=2;
-                    mapFragmnet = mapFragmnet.newInstance("佛教文化");
+                if (budCulFragmnet == null) {
+                    lastSelectedPosition = 2;
+                    budCulFragmnet = budCulFragmnet.newInstance("佛教文化");
                 }
-                transaction.replace(R.id.tb, mapFragmnet);
+                transaction.replace(R.id.tb, budCulFragmnet);
                 break;
             case 3:
                 if (mineFragmnet == null) {
-                    lastSelectedPosition=3;
+                    lastSelectedPosition = 3;
                     mineFragmnet = mineFragmnet.newInstance("我的");
                 }
                 transaction.replace(R.id.tb, mineFragmnet);
@@ -223,19 +227,17 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         // Drawer 打开时候回退的作用变成关闭Drawe
-        if(keyCode == KeyEvent.KEYCODE_BACK){
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
             if (drawer.isDrawerOpen(GravityCompat.START)) {
                 drawer.closeDrawer(GravityCompat.START);
                 return true;
-            }
-            else if(System.currentTimeMillis()-currentTime<1500){
+            } else if (System.currentTimeMillis() - currentTime < 1500) {
                 finish();
                 return true;
-            }
-            else {
+            } else {
                 currentTime = System.currentTimeMillis();
-                Toast.makeText(this,"再次点击返回按钮结束程序",Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "再次点击返回按钮结束程序", Toast.LENGTH_SHORT).show();
                 return false;
             }
         }
@@ -301,9 +303,6 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
@@ -318,37 +317,37 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        }
-        else if(id ==R.id.send_talk) {
-            boolean isLogin = sharedPreferences.getBoolean("isLogin",false);
-            if(isLogin){
-                Intent intent = new Intent(MainActivity.this,SendTalkActivity.class);
+        if (id == R.id.send_talk) {//分享
+            boolean isLogin = sharedPreferences.getBoolean("isLogin", false);
+            if (isLogin) {
+                Intent intent = new Intent(MainActivity.this, SendTalkActivity.class);
                 startActivity(intent);
-            }
-            else{
-                Snackbar.make(searchView,"您当前未登录，是否跳到登录界面",3000).setAction("是", new View.OnClickListener() {
+            } else {
+                Snackbar.make(searchView, "您当前未登录，是否跳到登录界面", 3000).setAction("是", new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent1 = new Intent(MainActivity.this,LoginActivity.class);
+                        Intent intent1 = new Intent(MainActivity.this, LoginActivity.class);
                         startActivity(intent1);
                     }
                 }).show();
             }
+        } else if (id == R.id.nav_manage) {//设置
+            Intent intent = new Intent(this, SettingActivity.class);
+            startActivity(intent);
 
-
-
-        }else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_share) {//分享
+            Resources resources = this.getResources();
+            int imageId = getResources().getIdentifier("fengmian1_show","drawable",getPackageName());
+            String path = ContentResolver.SCHEME_ANDROID_RESOURCE + "://" + resources.getResourcePackageName(imageId) + "/" + resources.getResourceTypeName(imageId) + "/" + resources.getResourceEntryName(imageId);
+            Uri imageUri = Uri.parse(path);
+            Intent shareIntent = new Intent();
+            shareIntent.setAction(Intent.ACTION_SEND);
+            shareIntent.putExtra(Intent.EXTRA_STREAM, imageUri);
+            shareIntent.setType("image/*");
+            startActivity(Intent.createChooser(shareIntent, "分享到："));
+        } else if (id == R.id.nav_send) {//联系我们
+            Intent intent = new Intent(this,ContractUs.class);
+            startActivity(intent);
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -359,6 +358,7 @@ public class MainActivity extends AppCompatActivity
     protected void onResume() {
         super.onResume();
     }
+
     public void getTalkData() {
         String url = services.urlGetTalk;
         OkHttpClient client = new OkHttpClient();
@@ -366,17 +366,17 @@ public class MainActivity extends AppCompatActivity
         requestBody.addFormDataPart("page", "0");
         final Request request = new Request.Builder().url(url).post(requestBody.build()).tag(MainActivity.this).build();
         //client.newBuilder().readTimeout(5000, TimeUnit.MILLISECONDS).build().newCall(request).enqueue(new Callback() {
-        client.newBuilder().readTimeout(10,TimeUnit.MINUTES).connectTimeout(10,TimeUnit.MINUTES).writeTimeout(10,TimeUnit.MINUTES).build().newCall(request).enqueue(new Callback() {
+        client.newBuilder().readTimeout(10, TimeUnit.MINUTES).connectTimeout(10, TimeUnit.MINUTES).writeTimeout(10, TimeUnit.MINUTES).build().newCall(request).enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
-                Log.e(TAG, "onFailure: "+e.getMessage() );
+                Log.e(TAG, "onFailure: " + e.getMessage());
             }
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
-                allTalkData =new Gson().fromJson(response.body().string(),AllTalk.class);
-                if(talkFragment!=null){
-                    if(talkFragment.list!=null){
+                allTalkData = new Gson().fromJson(response.body().string(), AllTalk.class);
+                if (talkFragment != null) {
+                    if (talkFragment.list != null) {
                         //talkFragment.list.addAll(allTalkData.getTalkArr());
                         talkFragment.handler.sendEmptyMessage(5);
                     }

@@ -45,7 +45,8 @@ public class VR_showactivity extends AppCompatActivity {
         intent = getIntent();
         String simaio = intent.getStringExtra("simaio");
         if (simaio == null) {
-            webView.loadUrl("https://i.svrvr.com/?a=wapview&id=r87739&code=0236FScD0HCune2hB6dD02CddD06FScc&state=blinq");
+            //webView.loadUrl("https://i.svrvr.com/?a=wapview&id=r87739&code=0236FScD0HCune2hB6dD02CddD06FScc&state=blinq");
+            webView.loadUrl("http://www.quanjingke.com/jq/m/529?from=singlemessage");
             getSupportActionBar().setTitle("VR");
         }else{
             getSupportActionBar().setTitle(simaio+"·VR");
@@ -53,6 +54,7 @@ public class VR_showactivity extends AppCompatActivity {
             if (simaio.equals("塔院寺"))   url = "https://i.svrvr.com/?a=wapview&id=b34189&code=023XO6LB0eXGHe2JSxMB0eb4LB0XO6LQ&state=blinq";
             else if (simaio.equals("菩萨顶")) url = "https://720yun.com/t/1f2jOssfsy3";
             else if (simaio.equals("殊像寺")) url = "https://i.svrvr.com/?a=wapview&id=r87739&code=0236FScD0HCune2hB6dD02CddD06FScc&state=blinq";
+            //else if(simaio.equals(""))
             if(url.equals("https://baidu.com")){
                 Toast.makeText(this,"很抱歉，暂无该寺庙的VR,已自动为您显示塔院寺的VR",Toast.LENGTH_LONG).show();
                 url = "https://i.svrvr.com/?a=wapview&id=b34189&code=023XO6LB0eXGHe2JSxMB0eb4LB0XO6LQ&state=blinq";

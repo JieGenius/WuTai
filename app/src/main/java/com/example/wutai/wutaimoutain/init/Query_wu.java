@@ -8,7 +8,7 @@ import java.util.List;
 public class Query_wu {
     public static List<Yinglian> query_yinglian0(){
 
-        List<Yinglian> yinglians = LitePal.limit(10).find(Yinglian.class);
+        List<Yinglian> yinglians = LitePal.limit(15).find(Yinglian.class);
         return yinglians;
     }
     public static List<Yinglian> query_yinglian(String name){
@@ -20,7 +20,7 @@ public class Query_wu {
         return yinglians1;
     }
     public static List<Yinglian> query_yinglian1(String name,String dadian){
-        List<Yinglian> yinglians = LitePal.where("simiao = ? and dadian = ?",name,dadian).find(Yinglian.class);
+        List<Yinglian> yinglians = LitePal.where("simiao = ? and dadian like ?",name,"%"+dadian+"%").find(Yinglian.class);
         return yinglians;
     }
     public static List<SimiaoItem> query_simiao(){

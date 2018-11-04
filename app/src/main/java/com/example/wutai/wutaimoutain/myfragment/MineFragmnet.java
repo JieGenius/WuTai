@@ -29,6 +29,7 @@ import android.widget.Toast;
 import com.example.wutai.wutaimoutain.MainActivity;
 import com.example.wutai.wutaimoutain.R;
 import com.example.wutai.wutaimoutain.Services.services;
+import com.example.wutai.wutaimoutain.mine.ContractUs;
 import com.example.wutai.wutaimoutain.mine.FeedbackActivity;
 import com.example.wutai.wutaimoutain.mine.LoginActivity;
 import com.example.wutai.wutaimoutain.mine.SettingActivity;
@@ -312,7 +313,7 @@ public class MineFragmnet extends Fragment {
                 startActivity(intent);
                 break;
             case R.id.call_me:
-                intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:"+"15835107065"));
+                intent = new Intent(getActivity(),ContractUs.class);
                 startActivity(intent);
                 break;
             case R.id.mine_settings:

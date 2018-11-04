@@ -59,7 +59,6 @@ public class HomeFragment extends Fragment {
         args.putString("agrs1", param1);
         fragment.setArguments(args);
         return fragment;
-
     }
 
     public HomeFragment() {
@@ -86,9 +85,6 @@ public class HomeFragment extends Fragment {
         initlist();
         initview(view);
         String agrs1 = bundle.getString("agrs1");
-
-//        LinearLayoutManager layoutManager1 = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
-//        ShareAdapter adapter1 = new ShareAdapter(getActivity(), shares);
         SimiaoAdapter adapter = new SimiaoAdapter(getActivity(), guobaos);
         SimiaoAdapter adapter1 = new SimiaoAdapter(getActivity(), shenbaos);
         AdtAdapter adtAdapter = new AdtAdapter(getActivity(), wutai_view);

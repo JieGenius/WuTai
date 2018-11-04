@@ -179,7 +179,7 @@
                 android:layout_below="@+id/yunyinjieshuo"
                 android:layout_toRightOf="@+id/text_vr"
                 android:id="@+id/text_yunyin"
-                android:text="漫游五台"
+                android:text="五台游记"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
