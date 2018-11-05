@@ -166,8 +166,6 @@ public class Setall {
                 if(buddhaDataPicName == null ||buddhaDataPicName.trim().length()==0){
                     buddhaDataPicName = "com_no_picture";
                 }
-
-
                 dadian.setSimiao(cursor.getString(cursor.getColumnIndex("simiao")));
                 dadian.setName(cursor.getString(cursor.getColumnIndex("name")));
                 dadian.setJianjie_dadian(cursor.getString(cursor.getColumnIndex("jianjie_dadian")));
