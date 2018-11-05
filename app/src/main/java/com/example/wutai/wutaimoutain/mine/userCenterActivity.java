@@ -41,6 +41,7 @@ import android.widget.Toast;
 import com.example.wutai.wutaimoutain.MainActivity;
 import com.example.wutai.wutaimoutain.R;
 import com.example.wutai.wutaimoutain.Services.services;
+import com.example.wutai.wutaimoutain.common.OnePicPreview;
 import com.example.wutai.wutaimoutain.common.ShowOnePictureActivity;
 import com.google.gson.Gson;
 import com.yalantis.ucrop.UCrop;
@@ -120,7 +121,7 @@ public class userCenterActivity extends AppCompatActivity {
                                 else{
                                     bitmap = ((BitmapDrawable)drawable).getBitmap();
                                 }
-                                Intent intent = new Intent(userCenterActivity.this,ShowOnePictureActivity.class);
+                                Intent intent = new Intent(userCenterActivity.this,OnePicPreview.class);
                                 intent.putExtra("bitmap",bitmap);
                                 startActivity(intent);
                             }

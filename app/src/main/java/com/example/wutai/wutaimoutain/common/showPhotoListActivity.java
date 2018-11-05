@@ -8,6 +8,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
@@ -20,32 +21,33 @@ import com.example.wutai.wutaimoutain.Services.services;
 import java.util.ArrayList;
 import java.util.List;
 
+import uk.co.senab.photoview.PhotoView;
+
 public class showPhotoListActivity extends Activity {
     public static List<View> list1;
     public static List<String> picPath;
     ViewPager viewPager;
+    LayoutInflater inflater ;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.common_show_pic_activity);
+        inflater = getLayoutInflater();
         viewPager =findViewById(R.id.common_show_pic_view_pager);
-
         initView();
-
         ShowPhotoPagerAdapter pagerAdapter = new ShowPhotoPagerAdapter(list1);
         viewPager.setAdapter(pagerAdapter);
         viewPager.setCurrentItem(getIntent().getIntExtra("position",0));
-
     }
 
     private void initView() {
         list1 = new ArrayList<>();
         for(int i=0;i<picPath.size();i++){
-            ImageView imageView = new ImageView(this);
-            imageView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.MATCH_PARENT));
-            imageView.setBackgroundColor(0xff000000);
+            View view = inflater.inflate(R.layout.activity_one_pic_preview,null);
+            PhotoView imageView = view.findViewById(R.id.com_one_pic_photo_view);
+            //PhotoView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.MATCH_PARENT));
             Glide.with(this).load(services.urlTalkPicPathPrefix+picPath.get(i)).into(imageView);
-            list1.add(imageView);
+            list1.add(view);
         }
     }
 

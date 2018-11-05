@@ -2,6 +2,12 @@ package com.example.wutai.wutaimoutain.jianjie_new;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.PixelFormat;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
@@ -31,6 +37,7 @@ import com.example.wutai.wutaimoutain.TaYuanSiVoice.DaCiYanShouBaoDianActivity;
 import com.example.wutai.wutaimoutain.TaYuanSiVoice.TianWangDianActivity;
 import com.example.wutai.wutaimoutain.Utils.GridSpacingItemDecoration;
 import com.example.wutai.wutaimoutain.Utils.MyLogUtils;
+import com.example.wutai.wutaimoutain.common.OnePicPreview;
 import com.example.wutai.wutaimoutain.init.Dadian;
 import com.example.wutai.wutaimoutain.init.Query_wu;
 import com.example.wutai.wutaimoutain.yinglian.YinglianShowActivity;
@@ -49,9 +56,10 @@ public class Jianjie_dadian_actiivty extends AppCompatActivity {
     private String simaio;
     private String dadian;
     private Dadian dadiandemo;
-    private FloatingActionButton more,yunyin,yinglian;
+    private FloatingActionButton more, yunyin, yinglian;
     private TabLayout tabLayout;
     private ViewPager viewPager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,7 +73,7 @@ public class Jianjie_dadian_actiivty extends AppCompatActivity {
         getintent = getIntent();
         simaio = getintent.getStringExtra("simiao");
         dadian = getintent.getStringExtra("dadian");
-        MyLogUtils.e("simiao :" + simaio + "dadian ： " + dadian );
+        MyLogUtils.e("simiao :" + simaio + "dadian ： " + dadian);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,40 +90,44 @@ public class Jianjie_dadian_actiivty extends AppCompatActivity {
         initlist();
     }
 
-    public void initview(){
+    public void initview() {
         toolbar = findViewById(R.id.jianjie_dadian_toolbar);
         tabLayout = findViewById(R.id.hall_tab_layout);
         viewPager = findViewById(R.id.hall_view_pager);
     }
 
 
-    public void initlist(){
+    public void initlist() {
         arrayList.clear();
-        arrayList.add(new Traver_simiao_pic(R.drawable.traverpic2,simaio,dadian ));
-        arrayList.add(new Traver_simiao_pic(R.drawable.traverpic3,simaio,dadian));
-        arrayList.add(new Traver_simiao_pic(R.drawable.traverpic4,simaio,dadian));
-        arrayList.add(new Traver_simiao_pic(R.drawable.traverpic5,simaio,dadian));
-        arrayList.add(new Traver_simiao_pic(R.drawable.traverpic6,simaio,dadian));
+        arrayList.add(new Traver_simiao_pic(R.drawable.traverpic2, simaio, dadian));
+        arrayList.add(new Traver_simiao_pic(R.drawable.traverpic3, simaio, dadian));
+        arrayList.add(new Traver_simiao_pic(R.drawable.traverpic4, simaio, dadian));
+        arrayList.add(new Traver_simiao_pic(R.drawable.traverpic5, simaio, dadian));
+        arrayList.add(new Traver_simiao_pic(R.drawable.traverpic6, simaio, dadian));
     }
 
-    public static void actionstart1(Context context, String name,String dadian){
+    public static void actionstart1(Context context, String name, String dadian) {
         Intent intent = new Intent(context, Jianjie_dadian_actiivty.class);
-        intent.putExtra("dadian",dadian);
-        intent.putExtra("simiao",name);
+        intent.putExtra("dadian", dadian);
+        intent.putExtra("simiao", name);
         context.startActivity(intent);
     }
+
     public class New_dadain_Adapter extends RecyclerView.Adapter<New_dadain_Adapter.ViewHolder> {
 
         private Context mcontext;
         private ArrayList<Traver_simiao_pic> sharesList;
-        class ViewHolder extends RecyclerView.ViewHolder{
+
+        class ViewHolder extends RecyclerView.ViewHolder {
             ImageView imageView;
-            public ViewHolder(View view){
+
+            public ViewHolder(View view) {
                 super(view);
-                imageView = (ImageView)view.findViewById(R.id.pic_traver);
+                imageView = (ImageView) view.findViewById(R.id.pic_traver);
             }
         }
-        public New_dadain_Adapter(Context mcontext,ArrayList<Traver_simiao_pic> newsList){
+
+        public New_dadain_Adapter(Context mcontext, ArrayList<Traver_simiao_pic> newsList) {
             this.mcontext = mcontext;
             sharesList = newsList;
         }
@@ -126,17 +138,18 @@ public class Jianjie_dadian_actiivty extends AppCompatActivity {
         }
 
         @Override
-        public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
-            if (mcontext == null){
+        public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+            if (mcontext == null) {
                 mcontext = parent.getContext();
             }
-            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.travepic,parent,false);
-            final ViewHolder holder =new ViewHolder(view);
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.travepic, parent, false);
+            final ViewHolder holder = new ViewHolder(view);
 
             return holder;
         }
+
         @Override
-        public void onBindViewHolder(ViewHolder holder, int position){
+        public void onBindViewHolder(ViewHolder holder, int position) {
             final Traver_simiao_pic traver_simiao_pic = sharesList.get(position);
             Glide.with(mcontext).load(traver_simiao_pic.getPic_id()).into(holder.imageView);
             holder.imageView.setOnClickListener(new View.OnClickListener() {
@@ -148,29 +161,29 @@ public class Jianjie_dadian_actiivty extends AppCompatActivity {
         }
 
         @Override
-        public int getItemCount(){
+        public int getItemCount() {
             return sharesList.size();
         }
     }
 
-    class MyViewPageAdapter extends PagerAdapter{
+    class MyViewPageAdapter extends PagerAdapter {
         List<View> views;
         LayoutInflater layoutInflater;
+
         public MyViewPageAdapter() {
             super();
             views = new ArrayList<>(dadians.size());
             layoutInflater = getLayoutInflater();
-            for(int i=0;i<dadians.size();i++){
-                View view =layoutInflater.inflate(R.layout.hall_view_page_item,null);
+            for (int i = 0; i < dadians.size(); i++) {
+                View view = layoutInflater.inflate(R.layout.hall_view_page_item, null);
                 ImageView jianjie_title = view.findViewById(R.id.jiejie_pic_dadain);
-                ImageView  new_jianjie_stage = view.findViewById(R.id.jianjie_dadian_stage);
+                final ImageView new_jianjie_stage = view.findViewById(R.id.jianjie_dadian_stage);
                 RecyclerView trave_pics = view.findViewById(R.id.travler_dadian_pics);
-                ImageView dadian_fenbu = view.findViewById(R.id.jianjie_dadianfenbu);
+                final ImageView dadian_fenbu = view.findViewById(R.id.jianjie_dadianfenbu);
                 TextView jianjie_newcontent = view.findViewById(R.id.jianjie_dadian_content);
-                ImageView fxdata = view.findViewById(R.id.jianjie_foxiangjieshao);
+                final ImageView fxdata = view.findViewById(R.id.jianjie_foxiangjieshao);
 
-
-                New_dadain_Adapter adapter = new New_dadain_Adapter(Jianjie_dadian_actiivty.this,arrayList);
+                New_dadain_Adapter adapter = new New_dadain_Adapter(Jianjie_dadian_actiivty.this, arrayList);
                 StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.HORIZONTAL);
                 trave_pics.setLayoutManager(layoutManager);
                 trave_pics.setAdapter(adapter);
@@ -179,11 +192,45 @@ public class Jianjie_dadian_actiivty extends AppCompatActivity {
                 boolean includeEdge = false;
                 trave_pics.addItemDecoration(new GridSpacingItemDecoration(spanCount, spacing, includeEdge));
 
-                Glide.with(Jianjie_dadian_actiivty.this).load(dadians.get(i).getTitle_imgid()).into(jianjie_title);
+                final int new_jianjie_stageId = dadians.get(i).getDadianjianjie_imgid();
+                final int dadian_fenbuId = dadians.get(i).getFouxiang_imgid();
+                final int fxdataId = dadians.get(i).getData_fouxaing();
+                jianjie_title.setImageResource(dadians.get(i).getTitle_imgid());
+                new_jianjie_stage.setImageResource(new_jianjie_stageId);
+                dadian_fenbu.setImageResource(dadian_fenbuId);
+                fxdata.setImageResource(fxdataId);
+
+                new_jianjie_stage.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Jianjie_dadian_actiivty.this,OnePicPreview.class);
+                        intent.putExtra("reId",new_jianjie_stageId);
+                        startActivity(intent);
+                    }
+                });
+                dadian_fenbu.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Jianjie_dadian_actiivty.this,OnePicPreview.class);
+                        intent.putExtra("reId",dadian_fenbuId);
+                        startActivity(intent);
+                    }
+                });
+                fxdata.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Jianjie_dadian_actiivty.this,OnePicPreview.class);
+                        intent.putExtra("reId",fxdataId);
+                        startActivity(intent);
+                    }
+                });
+
+
+               /* Glide.with(Jianjie_dadian_actiivty.this).load(dadians.get(i).getTitle_imgid()).into(jianjie_title);
                 Glide.with(Jianjie_dadian_actiivty.this).load(dadians.get(i).getDadianjianjie_imgid()).into(new_jianjie_stage);
                 Glide.with(Jianjie_dadian_actiivty.this).load(dadians.get(i).getFouxiang_imgid()).into(dadian_fenbu);
-                Glide.with(Jianjie_dadian_actiivty.this).load(dadians.get(i).getData_fouxaing()).into(fxdata);
-                String content = dadians.get(i).getJianjie_dadian().replace(" ","");
+                Glide.with(Jianjie_dadian_actiivty.this).load(dadians.get(i).getData_fouxaing()).into(fxdata);*/
+                String content = dadians.get(i).getJianjie_dadian().replace(" ", "");
                 jianjie_newcontent.setText(content);
                 views.add(view);
             }
@@ -216,6 +263,16 @@ public class Jianjie_dadian_actiivty extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             return dadians.get(position).getName();
         }
+    }
+    public static Bitmap drawableToBitmap(Drawable drawable) {
+        int w = drawable.getIntrinsicWidth();
+        int h = drawable.getIntrinsicHeight(); // 取 drawable 的颜色格式
+        Bitmap.Config config = drawable.getOpacity() != PixelFormat.OPAQUE ? Bitmap.Config.ARGB_8888 : Bitmap.Config.RGB_565; // 建立对应 bitmap
+        Bitmap bitmap = Bitmap.createBitmap(w, h, config); // 建立对应 bitmap 的画布
+        Canvas canvas = new Canvas(bitmap);
+        drawable.setBounds(0, 0, w, h); // 把 drawable 内容画到画布中 drawable.draw(canvas); return bitmap;
+        drawable.draw(canvas);
+        return bitmap;
     }
 
 }

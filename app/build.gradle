@@ -62,4 +62,5 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation 'jp.wasabeef:richeditor-android:1.2.2'
     implementation 'com.github.yalantis:ucrop:2.2.2'
+    implementation 'com.github.chrisbanes:PhotoView:1.2.6'
 }

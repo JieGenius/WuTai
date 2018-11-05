@@ -286,10 +286,11 @@
         <activity
             android:name=".LuoHouSIVoice.TianWangDianActivity"
             android:theme="@style/VoiceDetailTheme" />
-        <activity android:name=".mine.ContractUs"
+        <activity
+            android:name=".mine.ContractUs"
             android:launchMode="singleTop"
-            android:theme="@style/ManYouWutaiTheme"
-            ></activity>
+            android:theme="@style/ManYouWutaiTheme" />
+        <activity android:name=".common.OnePicPreview"></activity>
     </application>
 
 </manifest>
