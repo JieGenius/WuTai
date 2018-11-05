@@ -154,6 +154,20 @@ public class Setall {
                 String buddhaPicName = cursor.getString(cursor.getColumnIndex("fouxiang_img_name"));
                 String buddhaDataPicName = cursor.getString(cursor.getColumnIndex("data_fouxiang_img_name"));
 
+                if(titlePicName == null ||titlePicName.trim().length()==0){
+                    titlePicName = "com_no_picture";
+                }
+                if(introPicName == null ||introPicName.trim().length()==0){
+                    introPicName = "com_no_picture";
+                }
+                if(buddhaPicName == null ||buddhaPicName.trim().length()==0){
+                    buddhaPicName = "com_no_picture";
+                }
+                if(buddhaDataPicName == null ||buddhaDataPicName.trim().length()==0){
+                    buddhaDataPicName = "com_no_picture";
+                }
+
+
                 dadian.setSimiao(cursor.getString(cursor.getColumnIndex("simiao")));
                 dadian.setName(cursor.getString(cursor.getColumnIndex("name")));
                 dadian.setJianjie_dadian(cursor.getString(cursor.getColumnIndex("jianjie_dadian")));

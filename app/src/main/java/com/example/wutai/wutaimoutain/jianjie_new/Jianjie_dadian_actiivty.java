@@ -69,7 +69,7 @@ public class Jianjie_dadian_actiivty extends AppCompatActivity {
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Every_Simiao_Activity.actionstart(Jianjie_dadian_actiivty.this,simaio);
+                finish();
             }
         });
         dadians = Query_wu.query_dadian(simaio);
@@ -80,98 +80,9 @@ public class Jianjie_dadian_actiivty extends AppCompatActivity {
         tabLayout.setOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(viewPager));
         viewPager.setOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         initlist();
-       /* more.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                PopupMenu pop = new PopupMenu(Jianjie_dadian_actiivty.this, more);//v是加号控件
-                if (simaio.equals("塔院寺")){
-                pop.getMenuInflater().inflate(R.menu.tayaunsimenu, pop.getMenu());
-                pop.show();
-                pop.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-                    @Override
-                    public boolean onMenuItemClick(MenuItem item) {
-                        switch (item.getItemId()){
-                            case R.id.action_all_baita:
-                                Jianjie_dadian_actiivty.actionstart1(Jianjie_dadian_actiivty.this,"塔院寺","大白塔");
-                                break;
-                            case R.id.action_all_cangjing:
-                                Jianjie_dadian_actiivty.actionstart1(Jianjie_dadian_actiivty.this,"塔院寺","藏经阁");
-                                break;
-                            case R.id.action_all_ciyan:
-                                Jianjie_dadian_actiivty.actionstart1(Jianjie_dadian_actiivty.this,"塔院寺","大慈延寿宝殿");
-                                break;
-                            case R.id.action_all_tianwang:
-                                Jianjie_dadian_actiivty.actionstart1(Jianjie_dadian_actiivty.this,"塔院寺","天王殿");
-                                break;
-                        }
-                        return true;
-                    }
-                });
-               }else if (simaio.equals("显通寺")){
-
-                    pop.getMenuInflater().inflate(R.menu.xaintongmenu, pop.getMenu());
-                    pop.show();
-                    pop.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-                        @Override
-                        public boolean onMenuItemClick(MenuItem item) {
-                            switch (item.getItemId()){
-                                case R.id.action_all_gunyin:
-                                    Jianjie_dadian_actiivty.actionstart1(Jianjie_dadian_actiivty.this,"显通寺","观音殿");
-                                    break;
-                                case R.id.action_all_daxiong:
-                                    Jianjie_dadian_actiivty.actionstart1(Jianjie_dadian_actiivty.this,"显通寺","大雄宝殿");
-                                    break;
-                                case R.id.action_all_wenshu:
-                                    Jianjie_dadian_actiivty.actionstart1(Jianjie_dadian_actiivty.this,"显通寺","大文殊殿");
-                                    break;
-                            }
-                            return true;
-                        }
-                    });
-
-
-                }else Toast.makeText(Jianjie_dadian_actiivty.this,"暂无数据抱歉",Toast.LENGTH_SHORT).show();
-            }
-        });*/
-
-        // 根据寺庙的名字和大殿名字 来确定跳转到哪个 页面
-        /*yunyin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                    if(simaio.equals("塔院寺")){
-                        if(dadian.equals("大白塔")){
-                            startActivity(new Intent(Jianjie_dadian_actiivty.this, DaBaiTaActivity.class));
-                        }
-                        else if(dadian.equals("藏经阁")){
-                            startActivity(new Intent(Jianjie_dadian_actiivty.this, DaCangJingGeActivity.class));
-                        }
-                        else if(dadian.equals("大慈延寿宝殿")){
-                            startActivity(new Intent(Jianjie_dadian_actiivty.this, DaCiYanShouBaoDianActivity.class));
-                        }
-                        else if(dadian.equals("天王殿")){
-                            startActivity(new Intent(Jianjie_dadian_actiivty.this, TianWangDianActivity.class));
-                        }
-                    }
-            }
-        });
-
-
-        yinglian.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                YinglianShowActivity.actionstart(Jianjie_dadian_actiivty.this,simaio,dadian);
-            }
-        });
-*/
-
     }
 
     public void initview(){
-        /*more = (FloatingActionButton)findViewById(R.id.more_dadian_ben);
-        yunyin = (FloatingActionButton)findViewById(R.id.yunyin_jiehsuo_ben);
-        more = (FloatingActionButton)findViewById(R.id.more_dadian_ben);
-        yunyin = (FloatingActionButton)findViewById(R.id.yunyin_jiehsuo_ben);
-        yinglian = (FloatingActionButton)findViewById(R.id.yinglian_jiehsuo_ben);*/
         toolbar = findViewById(R.id.jianjie_dadian_toolbar);
         tabLayout = findViewById(R.id.hall_tab_layout);
         viewPager = findViewById(R.id.hall_view_pager);
@@ -193,25 +104,6 @@ public class Jianjie_dadian_actiivty extends AppCompatActivity {
         intent.putExtra("simiao",name);
         context.startActivity(intent);
     }
-
-
-//    public static void actionstart2(Context context, int id,String name,String dadian){
-//        Intent intent = new Intent(context, Jianjie_dadian_actiivty.class);
-//        intent.putExtra("id",id);
-//        intent.putExtra("dadian",dadian);
-//        intent.putExtra("simiao",name);
-//        context.startActivity(intent);
-//    }
-
-
-
-
-
-
-
-
-
-
     public class New_dadain_Adapter extends RecyclerView.Adapter<New_dadain_Adapter.ViewHolder> {
 
         private Context mcontext;
@@ -253,10 +145,6 @@ public class Jianjie_dadian_actiivty extends AppCompatActivity {
                     //Glide.with(Jianjie_dadian_actiivty.this).load(traver_simiao_pic.getPic_id()).into(new_jianjie_stage);
                 }
             });
-//        if (jianjie.isIssimiao()){
-//            holder.fx_pic.setVisibility(View.GONE);
-//            margin(holder.neadmove,0,1350,0,0);
-//        }else
         }
 
         @Override

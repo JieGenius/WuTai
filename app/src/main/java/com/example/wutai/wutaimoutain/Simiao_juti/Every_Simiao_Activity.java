@@ -119,12 +119,13 @@ public class Every_Simiao_Activity extends AppCompatActivity {
         ev_yunyin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {//大殿简介
-                if(name_simiao.equals("显通寺")||name_simiao.equals("菩萨顶")||name_simiao.equals("碧山寺")||name_simiao.equals("塔院寺")||name_simiao.equals("罗睺寺")){
+                Jianjie_dadian_actiivty.actionstart1(Every_Simiao_Activity.this,name_simiao,name_simiao);
+                /*if(name_simiao.equals("显通寺")||name_simiao.equals("菩萨顶")||name_simiao.equals("碧山寺")||name_simiao.equals("塔院寺")||name_simiao.equals("罗睺寺")){
                     Jianjie_dadian_actiivty.actionstart1(Every_Simiao_Activity.this,name_simiao,name_simiao);
                 }
                 else{
                     Toast.makeText(Every_Simiao_Activity.this,"暂无该殿数据",Toast.LENGTH_SHORT).show();
-                }
+                }*/
 
 
             }

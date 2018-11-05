@@ -6,8 +6,8 @@
     android:layout_height="match_parent">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:background="@color/rouhelan"
-        android:layout_height="35dp">
+        android:background="@color/colorPrimary"
+        android:layout_height="?attr/actionBarSize">
         <TextView
             android:textIsSelectable="true"
             android:layout_width="wrap_content"
@@ -30,6 +30,5 @@
         android:id="@+id/listview1"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
     </ListView>
 </LinearLayout>

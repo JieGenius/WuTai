@@ -94,7 +94,7 @@
                             android:layout_weight="5"
                             android:gravity="center_vertical|left"
                             android:textColor="#3b3535"
-                            android:textSize="16sp"
+                            android:textSize="14sp"
                             android:text="所属寺庙：" />
 
                         <TextView
@@ -104,7 +104,7 @@
                             android:layout_marginTop="2dp"
                             android:layout_marginBottom="2dp"
                             android:textColor="#3b3535"
-                            android:textSize="16sp"
+                            android:textSize="14sp"
                             android:layout_weight="7"
                             android:gravity="center_vertical|left" />
 
@@ -135,7 +135,7 @@
                             android:layout_weight="5"
                             android:gravity="center_vertical|left"
                             android:textColor="#3b3535"
-                            android:textSize="16sp"
+                            android:textSize="14sp"
                             android:text="所在大殿：" />
 
                         <TextView
@@ -145,7 +145,7 @@
                             android:layout_marginTop="2dp"
                             android:layout_marginBottom="2dp"
                             android:textColor="#3b3535"
-                            android:textSize="16sp"
+                            android:textSize="14sp"
                             android:layout_weight="7"
                             android:gravity="center_vertical|left" />
 
@@ -174,9 +174,10 @@
                             android:layout_marginTop="2dp"
                             android:layout_marginBottom="2dp"
                             android:textColor="#3b3535"
-                            android:textSize="16sp"
+                            android:textSize="14sp"
                             android:layout_weight="5"
                             android:gravity="center_vertical|left"
+                            android:singleLine="true"
                             android:text="书法家及撰联作者：" />
 
                         <TextView
@@ -184,8 +185,9 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:textColor="#3b3535"
-                            android:textSize="16sp"
+                            android:textSize="14sp"
                             android:layout_marginTop="2dp"
+                            android:singleLine="true"
                             android:layout_marginBottom="2dp"
                             android:layout_weight="7"
                             android:gravity="center_vertical|left" />
@@ -216,7 +218,7 @@
                             android:layout_marginTop="2dp"
                             android:layout_marginBottom="2dp"
                             android:textColor="#3b3535"
-                            android:textSize="16sp"
+                            android:textSize="14sp"
                             android:layout_weight="5"
                             android:gravity="center_vertical|left"
                             android:text="楹联大小：" />
@@ -228,7 +230,7 @@
                             android:layout_marginTop="2dp"
                             android:layout_marginBottom="2dp"
                             android:textColor="#3b3535"
-                            android:textSize="16sp"
+                            android:textSize="14sp"
                             android:layout_weight="7"
                             android:gravity="center_vertical|left" />
 
@@ -258,7 +260,7 @@
                             android:layout_marginBottom="2dp"
                             android:layout_weight="9"
                             android:textColor="#3b3535"
-                            android:textSize="16sp"
+                            android:textSize="14sp"
                             android:gravity="center_vertical|left"
                             android:text="辨认后简化字体：" />
 
@@ -274,7 +276,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="7dp"
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         android:textColor="#3b3535"/>
 
                     <View
@@ -301,7 +303,7 @@
                             android:layout_weight="9"
                             android:gravity="center_vertical|left"
                             android:textColor="#3b3535"
-                            android:textSize="16sp"
+                            android:textSize="14sp"
                             android:text="整体翻译：" />
 
                     </LinearLayout>
@@ -316,7 +318,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="7dp"
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         android:textColor="#3b3535"/>
 
                     <View
@@ -345,7 +347,7 @@
                             android:layout_marginBottom="2dp"
                             android:layout_weight="5"
                             android:textColor="#3b3535"
-                            android:textSize="16sp"
+                            android:textSize="14sp"
                             android:gravity="center_vertical|left"
                             android:text="所属类别：" />
 
@@ -355,7 +357,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginTop="2dp"
                             android:textColor="#3b3535"
-                            android:textSize="16sp"
+                            android:textSize="14sp"
                             android:layout_marginBottom="2dp"
                             android:layout_weight="7"
                             android:gravity="center_vertical|left" />
@@ -387,7 +389,7 @@
                             android:layout_marginTop="2dp"
                             android:layout_marginBottom="2dp"
                             android:textColor="#3b3535"
-                            android:textSize="16sp"
+                            android:textSize="14sp"
                             android:layout_weight="9"
                             android:gravity="center_vertical|left"
                             android:text="本联释义：" />

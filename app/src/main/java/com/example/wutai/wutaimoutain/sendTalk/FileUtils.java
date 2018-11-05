@@ -40,9 +40,6 @@ public class FileUtils {
 		File dir = new File(SDPATH + dirName);
 		if (Environment.getExternalStorageState().equals(
 				Environment.MEDIA_MOUNTED)) {
-
-			System.out.println("createSDDir:" + dir.getAbsolutePath());
-			System.out.println("createSDDir:" + dir.mkdir());
 		}
 		return dir;
 	}

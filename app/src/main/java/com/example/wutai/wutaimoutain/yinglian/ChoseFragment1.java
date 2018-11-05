@@ -60,13 +60,10 @@ public class ChoseFragment1 extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (currentlevel == LEVEL_BAOHU){
                     baohu = baohus.get(position);
-                    System.out.println(baohu+"/////////////");
                     query_simiao();
                 }else if (currentlevel == LEVEL_SIMIAO){
-
                     simiaoItem = simiaos.get(position);
                     String simiao = simiaoItem.getName();
-                    System.out.println(getActivity()+"/*/**/*/*//*/*");
                     VR_showactivity.actionstart0(getActivity(),simiao);
                     getActivity().finish();
 
@@ -98,7 +95,6 @@ public class ChoseFragment1 extends Fragment {
             adapter.notifyDataSetChanged();
             listview.setSelection(0);
             currentlevel = LEVEL_BAOHU;
-            System.out.println(currentlevel+"//////0.0.0.0.0.0.");
         }else Toast.makeText(getActivity(),"没有数据",Toast.LENGTH_SHORT).show();
 
     }
@@ -141,11 +137,9 @@ public class ChoseFragment1 extends Fragment {
 
     }
     public void initdata(){
-        baohus.add("国家级保护寺庙");
-        baohus.add("山西省级保护寺庙");
-
-
-
-
+        if(baohus!=null && baohus.size()==0){
+            baohus.add("国家级保护寺庙");
+            baohus.add("山西省级保护寺庙");
+        }
     }
 }
