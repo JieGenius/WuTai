@@ -7,7 +7,9 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -29,6 +31,7 @@ import android.widget.Toast;
 import com.example.wutai.wutaimoutain.MainActivity;
 import com.example.wutai.wutaimoutain.R;
 import com.example.wutai.wutaimoutain.Services.services;
+import com.example.wutai.wutaimoutain.common.OnePicPreview;
 import com.example.wutai.wutaimoutain.mine.ContractUs;
 import com.example.wutai.wutaimoutain.mine.FeedbackActivity;
 import com.example.wutai.wutaimoutain.mine.LoginActivity;
@@ -93,6 +96,7 @@ public class MineFragmnet extends Fragment {
     Handler handler;
     ProgressDialog progressDialog;
     SharedPreferences sharedPreferences;
+    Bitmap  userHeadPic;
 
     public static MineFragmnet newInstance(String param1) {
         MineFragmnet fragment = new MineFragmnet();
@@ -121,6 +125,16 @@ public class MineFragmnet extends Fragment {
         Bundle bundle = getArguments();
         String agrs1 = bundle.getString("agrs1");
         unbinder = ButterKnife.bind(this, view);
+        mineCivUserPic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bitmap bitmap = ((BitmapDrawable)mineCivUserPic.getDrawable()).getBitmap();
+                Intent intent = new Intent(getActivity(),OnePicPreview.class);
+                intent.putExtra("bitmap",bitmap);
+                startActivity(intent);
+            }
+        });
+
         handler = new Handler(){
             @Override
             public void handleMessage(Message msg) {

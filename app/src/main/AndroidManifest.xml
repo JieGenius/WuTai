@@ -216,7 +216,9 @@
             android:launchMode="singleTask" />
         <activity android:name=".sendTalk.ImageGridActivity" />
         <activity android:name=".sendTalk.PhotoActivity" />
-        <activity android:name=".common.showPhotoListActivity" />
+        <activity android:name=".common.showPhotoListActivity"
+            android:launchMode="singleTop"
+            />
         <activity
             android:name="com.yalantis.ucrop.UCropActivity"
             android:screenOrientation="portrait"
@@ -290,7 +292,9 @@
             android:name=".mine.ContractUs"
             android:launchMode="singleTop"
             android:theme="@style/ManYouWutaiTheme" />
-        <activity android:name=".common.OnePicPreview"></activity>
+        <activity android:name=".common.OnePicPreview"
+            android:launchMode="singleTop"
+            ></activity>
     </application>
 
 </manifest>

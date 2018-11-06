@@ -22,6 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import uk.co.senab.photoview.PhotoView;
+import uk.co.senab.photoview.PhotoViewAttacher;
 
 public class showPhotoListActivity extends Activity {
     public static List<View> list1;
@@ -46,6 +47,17 @@ public class showPhotoListActivity extends Activity {
             View view = inflater.inflate(R.layout.activity_one_pic_preview,null);
             PhotoView imageView = view.findViewById(R.id.com_one_pic_photo_view);
             //PhotoView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.MATCH_PARENT));
+            imageView.setOnPhotoTapListener(new PhotoViewAttacher.OnPhotoTapListener() {
+                @Override
+                public void onPhotoTap(View view, float v, float v1) {
+                    finish();
+                }
+
+                @Override
+                public void onOutsidePhotoTap() {
+                    finish();
+                }
+            });
             Glide.with(this).load(services.urlTalkPicPathPrefix+picPath.get(i)).into(imageView);
             list1.add(view);
         }
@@ -55,7 +67,7 @@ public class showPhotoListActivity extends Activity {
         Intent intent = new Intent(context,showPhotoListActivity.class);
         picPath = list;
         intent.putExtra("position",postion);
-        context.getApplicationContext().startActivity(intent);
+        context.startActivity(intent);
     }
     class ShowPhotoPagerAdapter extends PagerAdapter{
         List<View> list;
