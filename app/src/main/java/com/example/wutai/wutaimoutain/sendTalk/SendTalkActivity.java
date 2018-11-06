@@ -181,7 +181,6 @@ public class SendTalkActivity extends MPermissionsActivity {
                             Bimp.drr.get(i).lastIndexOf("."));
                     list.add(FileUtils.SDPATH + Str + ".JPEG");
                 }
-
                 String url = services.urlSendTalk;
                 String file_path;
                 OkHttpClient client = new OkHttpClient();
@@ -207,7 +206,22 @@ public class SendTalkActivity extends MPermissionsActivity {
                         FileUtils.deleteDir();
                         Bimp.bmp.clear();
                         Bimp.max = 0;
-                        adapter.notifyDataSetChanged();
+                        final Handler handler = new Handler(getMainLooper()) {
+                            @Override
+                            public void handleMessage(Message msg) {
+                                if (msg.what == 2) {
+                                    Toast.makeText(SendTalkActivity.this, "说说上传失败", Toast.LENGTH_SHORT).show();
+                                    if(adapter!=null){
+                                        adapter.notifyDataSetChanged();
+                                    }
+                                }
+                            }
+                        };
+                        Message message = new Message();
+                        message.what = 2;
+                        handler.sendMessage(message);
+
+                        //adapter.notifyDataSetChanged();
                     }
 
                     @Override
@@ -216,12 +230,15 @@ public class SendTalkActivity extends MPermissionsActivity {
                         FileUtils.deleteDir();
                         Bimp.bmp.clear();
                         Bimp.max = 0;
-                        adapter.notifyDataSetChanged();
+
                         final Handler handler = new Handler(getMainLooper()) {
                             @Override
                             public void handleMessage(Message msg) {
                                 if (msg.what == 1) {
-                                    Toast.makeText(getApplicationContext(), "说说上传成功", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(SendTalkActivity.this, "说说上传成功", Toast.LENGTH_SHORT).show();
+                                    if(adapter!=null){
+                                        adapter.notifyDataSetChanged();
+                                    }
                                 }
                             }
                         };
@@ -312,10 +329,6 @@ public class SendTalkActivity extends MPermissionsActivity {
             ViewHolder holder = null;
             if (convertView == null) {
                 convertView = inflater.inflate(R.layout.talk_item_published_grida, parent, false);
-//                ViewGroup.LayoutParams layoutParams = convertView.getLayoutParams();
-//                layoutParams.height = parent.getWidth()/3;
-//                convertView.setLayoutParams(layoutParams);
-
                 holder = new ViewHolder();
                 holder.image = (ImageView) convertView.findViewById(R.id.item_grida_image);
                 convertView.setTag(holder);
@@ -348,7 +361,6 @@ public class SendTalkActivity extends MPermissionsActivity {
         };
 
         public void loading() {
-
             new Thread(new Runnable() {
                 public void run() {
                     while (true) {
@@ -363,14 +375,15 @@ public class SendTalkActivity extends MPermissionsActivity {
                                 return;
                             }
                             try {
+
                                 String path = Bimp.drr.get(Bimp.max);
+                                Bimp.max += 1;
                                 Log.i("SendTalkActivity-Load:", path);
                                 Bitmap bm = Bimp.revitionImageSize(path);
                                 Bimp.bmp.add(bm);
-                                String newStr = path.substring(path.lastIndexOf("/") + 1,
-                                        path.lastIndexOf("."));
+                                String newStr = path.substring(path.lastIndexOf("/") + 1, path.lastIndexOf("."));
                                 FileUtils.saveBitmap(bm, "" + newStr);
-                                Bimp.max += 1;
+
                                 Message message = new Message();
                                 message.what = 1;
                                 handler.sendMessage(message);
@@ -405,9 +418,10 @@ public class SendTalkActivity extends MPermissionsActivity {
     }
 
     protected void onRestart() {
+        super.onRestart();
         adapter.update();
         Log.e(TAG, "onRestart: ");
-        super.onRestart();
+
     }
 
     public class PopupWindows extends PopupWindow {

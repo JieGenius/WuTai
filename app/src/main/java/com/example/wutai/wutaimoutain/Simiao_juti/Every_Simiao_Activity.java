@@ -29,10 +29,16 @@ import com.example.wutai.wutaimoutain.jianjie_new.Jianjie_dadian_actiivty;
 import com.example.wutai.wutaimoutain.jianjie_new.Jianjie_new_activity;
 import com.example.wutai.wutaimoutain.jianjie_new.Traver_pic;
 import com.example.wutai.wutaimoutain.navigation.BiShanSiActivity;
+import com.example.wutai.wutaimoutain.navigation.JinGeSiActivity;
+import com.example.wutai.wutaimoutain.navigation.LongQuanSiActivity;
 import com.example.wutai.wutaimoutain.navigation.LuoHouSiActivity;
+import com.example.wutai.wutaimoutain.navigation.NanShanSiActivity;
+import com.example.wutai.wutaimoutain.navigation.NavigationHomeActivity;
 import com.example.wutai.wutaimoutain.navigation.PuSaDingActivity;
+import com.example.wutai.wutaimoutain.navigation.ShuXiangSiActivity;
 import com.example.wutai.wutaimoutain.navigation.TaYuanSiActivity;
 import com.example.wutai.wutaimoutain.navigation.XianTongSiActivity;
+import com.example.wutai.wutaimoutain.navigation.YuanZhaoSiActivity;
 import com.example.wutai.wutaimoutain.yinglian.Yinglian;
 import com.example.wutai.wutaimoutain.yinglian.YinglianShowActivity;
 
@@ -120,14 +126,6 @@ public class Every_Simiao_Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {//大殿简介
                 Jianjie_dadian_actiivty.actionstart1(Every_Simiao_Activity.this,name_simiao,name_simiao);
-                /*if(name_simiao.equals("显通寺")||name_simiao.equals("菩萨顶")||name_simiao.equals("碧山寺")||name_simiao.equals("塔院寺")||name_simiao.equals("罗睺寺")){
-                    Jianjie_dadian_actiivty.actionstart1(Every_Simiao_Activity.this,name_simiao,name_simiao);
-                }
-                else{
-                    Toast.makeText(Every_Simiao_Activity.this,"暂无该殿数据",Toast.LENGTH_SHORT).show();
-                }*/
-
-
             }
         });
         ev_daohang.setOnClickListener(new View.OnClickListener() {
@@ -153,6 +151,21 @@ public class Every_Simiao_Activity extends AppCompatActivity {
                 else if(name_simiao.equals("罗睺寺")){
                     Intent intent = new Intent(Every_Simiao_Activity.this, LuoHouSiActivity.class);
                     startActivity(intent);
+                }
+                else if(name_simiao.equals("")){
+                    startActivity(new Intent(Every_Simiao_Activity.this,ShuXiangSiActivity.class));
+                }
+                else if(name_simiao.equals("")){
+                    startActivity(new Intent(Every_Simiao_Activity.this,NanShanSiActivity.class));
+                }
+                else if(name_simiao.equals("")){
+                    startActivity(new Intent(Every_Simiao_Activity.this,JinGeSiActivity.class));
+                }
+                else if(name_simiao.equals("")){
+                    startActivity(new Intent(Every_Simiao_Activity.this,LongQuanSiActivity.class));
+                }
+                else if(name_simiao.equals("")){
+                    startActivity(new Intent(Every_Simiao_Activity.this,YuanZhaoSiActivity.class));
                 }
                 else Toast.makeText(Every_Simiao_Activity.this,"暂时没有数据",Toast.LENGTH_SHORT).show();
 

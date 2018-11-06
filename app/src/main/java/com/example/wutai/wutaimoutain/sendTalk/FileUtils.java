@@ -38,8 +38,8 @@ public class FileUtils {
 
 	public static File createSDDir(String dirName) throws IOException {
 		File dir = new File(SDPATH + dirName);
-		if (Environment.getExternalStorageState().equals(
-				Environment.MEDIA_MOUNTED)) {
+		if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
+			dir.mkdir();
 		}
 		return dir;
 	}
