@@ -290,7 +290,21 @@
             android:name=".mine.ContractUs"
             android:launchMode="singleTop"
             android:theme="@style/ManYouWutaiTheme" />
-        <activity android:name=".common.OnePicPreview"></activity>
+        <activity android:name=".common.OnePicPreview" />
+        <activity android:name=".navigation.ShuXiangSiActivity"
+            android:theme="@style/VoiceDetailTheme"
+            />
+        <activity android:name=".navigation.NanShanSiActivity"
+            android:theme="@style/VoiceDetailTheme"
+            />
+        <activity android:name=".navigation.JinGeSiActivity"
+            android:theme="@style/VoiceDetailTheme"
+            />
+        <activity android:name=".navigation.LongQuanSiActivity"
+            android:theme="@style/VoiceDetailTheme"
+            />
+        <activity android:name=".navigation.YuanZhaoSiActivity"
+            android:theme="@style/VoiceDetailTheme" />
     </application>
 
 </manifest>

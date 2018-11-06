@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/yuan_zhao_si"
+    tools:context="com.example.wutai.wutaimoutain.navigation.TaYuanSiActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:layout_x="133dp"
+        android:layout_y="180dp"
+        android:src="@mipmap/mini_narrate"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:layout_x="139dp"
+        android:layout_y="320dp"
+        android:src="@mipmap/mini_narrate"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="127dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="20sp"
+        android:layout_height="20dp"
+        android:layout_x="140dp"
+        android:layout_y="418dp"
+        android:src="@mipmap/mini_narrate"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="242dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:layout_x="143dp"
+        android:layout_y="505dp"
+        android:src="@mipmap/mini_narrate"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="349dp" />
+
+
+
+    <Button
+        android:id="@+id/da_cang_jing_ge"
+        android:layout_width="98dp"
+        android:layout_height="74dp"
+        android:layout_x="60dp"
+        android:layout_y="132dp"
+        style="?borderlessButtonStyle"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <Button
+        android:id="@+id/da_bai_ta"
+        style="?borderlessButtonStyle"
+        android:layout_width="106dp"
+        android:layout_height="113dp"
+        android:layout_x="59dp"
+        android:layout_y="239dp"
+        tools:layout_editor_absoluteX="233dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <Button
+        android:id="@+id/da_ci_bao_dian"
+        android:layout_width="wrap_content"
+        android:layout_height="86dp"
+        android:layout_x="73dp"
+        android:layout_y="359dp"
+        style="?borderlessButtonStyle"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="409dp" />
+    <Button
+        android:id="@+id/tian_wang_dian"
+        style="?borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="79dp"
+        android:layout_x="80dp"
+        android:layout_y="461dp"
+        />
+
+</AbsoluteLayout>
