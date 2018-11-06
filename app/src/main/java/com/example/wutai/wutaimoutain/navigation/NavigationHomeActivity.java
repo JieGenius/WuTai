@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.design.widget.NavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -122,6 +123,21 @@ public class NavigationHomeActivity extends AppCompatActivity implements View.On
                 break;
             case R.id.bi_shan_si:
                 startActivity(new Intent(NavigationHomeActivity.this,BiShanSiActivity.class));
+                break;
+            case R.id.shu_xiang_si:
+                startActivity(new Intent(NavigationHomeActivity.this,ShuXiangSiActivity.class));
+                break;
+            case R.id.nan_shan_si:
+                startActivity(new Intent(NavigationHomeActivity.this,NanShanSiActivity.class));
+                break;
+            case R.id.jin_ge_si:
+                startActivity(new Intent(NavigationHomeActivity.this,JinGeSiActivity.class));
+                break;
+            case R.id.long_quan_si:
+                startActivity(new Intent(NavigationHomeActivity.this,LongQuanSiActivity.class));
+                break;
+            case R.id.yuan_zhao_si:
+                startActivity(new Intent(NavigationHomeActivity.this,YuanZhaoSiActivity.class));
                 break;
             default:
                 break;
