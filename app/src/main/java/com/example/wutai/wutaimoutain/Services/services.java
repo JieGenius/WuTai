@@ -7,4 +7,5 @@ public class services {
     public static String urlSendTalk="http://139.199.37.80/Mount_WuTai/addTalk/index.php";
     public static String urlGetTalk="http://139.199.37.80/Mount_WuTai/getTalk/index.php";
     public static String urlTalkPicPathPrefix="http://139.199.37.80/userTalkPic/";
+    public static String urlAddComm="http://139.199.37.80/Mount_WuTai/addComment/index.php";
 }

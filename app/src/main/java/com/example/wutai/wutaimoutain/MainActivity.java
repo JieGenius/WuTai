@@ -225,14 +225,20 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
+    public boolean onKeyDown(int keyCode, KeyEvent event ) {
         // Drawer 打开时候回退的作用变成关闭Drawe
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
             if (drawer.isDrawerOpen(GravityCompat.START)) {
                 drawer.closeDrawer(GravityCompat.START);
                 return true;
-            } else if (System.currentTimeMillis() - currentTime < 1500) {
+            }
+            if(bottomNavigationBar.getCurrentSelectedPosition()==1&&talkFragment.sendCommentLayout.getVisibility()==View.VISIBLE){
+                talkFragment.sendCommentLayout.setVisibility(View.GONE);
+                talkFragment.commentContent.setText("");
+                return true;
+            }
+            else if (System.currentTimeMillis() - currentTime < 1500) {
                 finish();
                 return true;
             } else {
@@ -283,19 +289,6 @@ public class MainActivity extends AppCompatActivity
 //                }
 
                 return true;
-            }
-        });
-        searchView.setOnSearchClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                bottomNavigationBar.setVisibility(View.INVISIBLE);
-            }
-        });
-        searchView.setOnCloseListener(new SearchView.OnCloseListener() {
-            @Override
-            public boolean onClose() {
-                bottomNavigationBar.setVisibility(View.VISIBLE);
-                return false;
             }
         });
         return true;
@@ -374,6 +367,7 @@ public class MainActivity extends AppCompatActivity
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
+                //Log.e(TAG, "onResponse: "+response.body().string() );
                 allTalkData = new Gson().fromJson(response.body().string(), AllTalk.class);
                 if (talkFragment != null) {
                     if (talkFragment.list != null) {

@@ -149,8 +149,10 @@ public class ChooseAreaFragment extends Fragment {
 
     }
     public void initdata(){
-        baohus.add("国家级保护寺庙");
-        baohus.add("山西省级保护寺庙");
+        if(baohus.size()==0){
+            baohus.add("国家级保护寺庙");
+            baohus.add("山西省级保护寺庙");
+        }
 
     }
 }

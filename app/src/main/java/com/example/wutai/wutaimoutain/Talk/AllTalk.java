@@ -23,14 +23,16 @@ public class AllTalk {
          * commArr : [{"name":"测试人员","time":"2018-10-3 17:02:55","content":"这是一条测试评论"}]
          * userPic : null
          */
-
+        private String  id;
         private String userName;
         private String content;
         private String sendTime;
         private String userPic;
         private List<String> picArr;
         private List<CommArrBean> commArr;
-
+        public String  getTalk_id(){
+            return id;
+        }
         public String getUserName() {
             return userName;
         }

@@ -46,14 +46,11 @@ public class GridViewAdapter extends BaseAdapter {
         Holder holder;
         Context context = parent.getContext();
         if(convertView == null){
-
             convertView = LayoutInflater.from(context).inflate(R.layout.talk_main_grid_view_item,null);
-
             holder = new Holder();
             holder.imageView=convertView.findViewById(R.id.talk_grid_view_item_square_iv);
             convertView.setTag(holder);
             Glide.with(context).load(pathPrefix+list.get(position)).into(holder.imageView);
-
         }
         else{
             holder=(Holder) convertView.getTag();

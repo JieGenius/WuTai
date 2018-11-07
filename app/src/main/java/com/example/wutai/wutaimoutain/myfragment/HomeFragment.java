@@ -105,10 +105,10 @@ public class HomeFragment extends Fragment {
         int spacing = 20; // 50px
         boolean includeEdge = false;
         guobao.addItemDecoration(new GridSpacingItemDecoration(spanCount, spacing, includeEdge));
-        if (timer == null) {
+        /*if (timer == null) {
             timer = new Timer();
             timer.schedule(timerTask, 2000, 13000);
-        };
+        };*/
         icon_allsimiaos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -180,7 +180,7 @@ public class HomeFragment extends Fragment {
             super.handleMessage(msg);
         }
     };
-    TimerTask timerTask = new TimerTask() {
+    /*TimerTask timerTask = new TimerTask() {
         @Override
         public void run() {
             Message message = new Message();
@@ -189,7 +189,7 @@ public class HomeFragment extends Fragment {
             i++;
             handler.sendMessage(message);
         }
-    };
+    };*/
 
     public void initview(View view) {
         guobao = (RecyclerView) view.findViewById(R.id.guobao);
