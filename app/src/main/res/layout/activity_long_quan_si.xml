@@ -10,8 +10,8 @@
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="20sp"
         android:layout_height="20sp"
-        android:layout_x="133dp"
-        android:layout_y="180dp"
+        android:layout_x="185dp"
+        android:layout_y="95dp"
         android:src="@mipmap/mini_narrate"
         tools:layout_editor_absoluteX="122dp"
         tools:layout_editor_absoluteY="47dp" />
@@ -19,8 +19,8 @@
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="20sp"
         android:layout_height="20sp"
-        android:layout_x="139dp"
-        android:layout_y="320dp"
+        android:layout_x="171dp"
+        android:layout_y="233dp"
         android:src="@mipmap/mini_narrate"
         tools:layout_editor_absoluteX="147dp"
         tools:layout_editor_absoluteY="127dp" />
@@ -28,8 +28,8 @@
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="20sp"
         android:layout_height="20dp"
-        android:layout_x="140dp"
-        android:layout_y="418dp"
+        android:layout_x="170dp"
+        android:layout_y="347dp"
         android:src="@mipmap/mini_narrate"
         tools:layout_editor_absoluteX="147dp"
         tools:layout_editor_absoluteY="242dp" />
@@ -37,50 +37,66 @@
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="20sp"
         android:layout_height="20sp"
-        android:layout_x="143dp"
-        android:layout_y="505dp"
+        android:layout_x="174dp"
+        android:layout_y="456dp"
+        android:src="@mipmap/mini_narrate"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="349dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:layout_x="283dp"
+        android:layout_y="201dp"
         android:src="@mipmap/mini_narrate"
         tools:layout_editor_absoluteX="167dp"
         tools:layout_editor_absoluteY="349dp" />
 
 
-
     <Button
-        android:id="@+id/da_cang_jing_ge"
+        android:id="@+id/LQS_da_xiong_bao_dian"
+        style="?borderlessButtonStyle"
         android:layout_width="98dp"
         android:layout_height="74dp"
-        android:layout_x="60dp"
-        android:layout_y="132dp"
-        style="?borderlessButtonStyle"
+        android:layout_x="113dp"
+        android:layout_y="48dp"
         tools:layout_editor_absoluteX="9dp"
         tools:layout_editor_absoluteY="130dp" />
 
     <Button
-        android:id="@+id/da_bai_ta"
+        android:id="@+id/LQS_guan_yin_dian"
         style="?borderlessButtonStyle"
         android:layout_width="106dp"
-        android:layout_height="113dp"
-        android:layout_x="59dp"
-        android:layout_y="239dp"
+        android:layout_height="82dp"
+        android:layout_x="110dp"
+        android:layout_y="187dp"
         tools:layout_editor_absoluteX="233dp"
         tools:layout_editor_absoluteY="288dp" />
 
     <Button
-        android:id="@+id/da_ci_bao_dian"
+        android:id="@+id/LQS_tian_wang_dian"
+        style="?borderlessButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="86dp"
-        android:layout_x="73dp"
-        android:layout_y="359dp"
-        style="?borderlessButtonStyle"
+        android:layout_x="120dp"
+        android:layout_y="306dp"
         tools:layout_editor_absoluteX="235dp"
         tools:layout_editor_absoluteY="409dp" />
+
     <Button
-        android:id="@+id/tian_wang_dian"
+        android:id="@+id/LQS_zu_shi_dian"
         style="?borderlessButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="79dp"
-        android:layout_x="80dp"
-        android:layout_y="461dp"
-        />
+        android:layout_x="123dp"
+        android:layout_y="430dp" />
+
+    <Button
+        android:id="@+id/LQS_wu_guan_tang"
+        style="?borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="79dp"
+        android:layout_x="247dp"
+        android:layout_y="157dp" />
 
 </AbsoluteLayout>

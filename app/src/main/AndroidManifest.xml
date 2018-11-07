@@ -291,20 +291,60 @@
             android:launchMode="singleTop"
             android:theme="@style/ManYouWutaiTheme" />
         <activity android:name=".common.OnePicPreview" />
-        <activity android:name=".navigation.ShuXiangSiActivity"
-            android:theme="@style/VoiceDetailTheme"
-            />
-        <activity android:name=".navigation.NanShanSiActivity"
-            android:theme="@style/VoiceDetailTheme"
-            />
-        <activity android:name=".navigation.JinGeSiActivity"
-            android:theme="@style/VoiceDetailTheme"
-            />
-        <activity android:name=".navigation.LongQuanSiActivity"
-            android:theme="@style/VoiceDetailTheme"
-            />
-        <activity android:name=".navigation.YuanZhaoSiActivity"
+        <activity
+            android:name=".navigation.ShuXiangSiActivity"
             android:theme="@style/VoiceDetailTheme" />
+        <activity
+            android:name=".navigation.NanShanSiActivity"
+            android:theme="@style/VoiceDetailTheme" />
+        <activity
+            android:name=".navigation.JinGeSiActivity"
+            android:theme="@style/VoiceDetailTheme" />
+        <activity
+            android:name=".navigation.LongQuanSiActivity"
+            android:theme="@style/VoiceDetailTheme" />
+        <activity
+            android:name=".navigation.YuanZhaoSiActivity"
+            android:theme="@style/VoiceDetailTheme" />
+        <activity android:name=".ShengBao.JinGeSiVoice.JGSDaXiongBaoDianActivity"
+            android:theme="@style/VoiceDetailTheme"
+            />
+        <activity android:name=".ShengBao.JinGeSiVoice.JGSDaBeiDianActivity"
+            android:theme="@style/VoiceDetailTheme"
+            />
+        <activity android:name=".ShengBao.JinGeSiVoice.JGSTianWangDianActivity"
+            android:theme="@style/VoiceDetailTheme"
+            />
+        <activity android:name=".ShengBao.JinGeSiVoice.JGSWoFoDian"
+            android:theme="@style/VoiceDetailTheme"
+            />
+        <activity android:name=".ShengBao.JinGeSiVoice.JGSWoFoDianActivity"
+            android:theme="@style/VoiceDetailTheme"
+            />
+        <activity android:name=".ShengBao.LongQuanSiVoice.LQSDaXiongBaoDianActivity"
+            android:theme="@style/VoiceDetailTheme"
+            />
+        <activity android:name=".ShengBao.LongQuanSiVoice.LQSGuanYinDianActivity"
+            android:theme="@style/VoiceDetailTheme"
+            />
+        <activity android:name=".ShengBao.LongQuanSiVoice.LQSTianWangDianActivity"
+            android:theme="@style/VoiceDetailTheme"
+            />
+        <activity android:name=".ShengBao.LongQuanSiVoice.LQSWuGuanTangActivity"
+            android:theme="@style/VoiceDetailTheme"
+            />
+        <activity android:name=".ShengBao.LongQuanSiVoice.LQSZuShiDianActivity"
+            android:theme="@style/VoiceDetailTheme"
+            />
+        <activity android:name=".ShengBao.ShuXiangSiVoice.SXSHouGaoDianActivity"
+            android:theme="@style/VoiceDetailTheme"
+            />
+        <activity android:name=".ShengBao.ShuXiangSiVoice.SXSDaWenShuDianActivity"
+            android:theme="@style/VoiceDetailTheme"
+            />
+        <activity android:name=".ShengBao.ShuXiangSiVoice.SXSJiaLanDianActivity"
+            android:theme="@style/VoiceDetailTheme"
+            />
     </application>
 
 </manifest>
