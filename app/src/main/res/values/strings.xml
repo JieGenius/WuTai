@@ -121,6 +121,46 @@
         天王殿面宽22.7米，进深12.7米，单檐歇山顶，前出廊，门额横匾一块，上书“护国碧山十方普济禅寺”。殿内正中佛龛内供弥勒佛，两侧立四大天王，后门正中的龛内有护法神韦陀。此殿一殿二用，兼做山门。
     </string>
 
+    <!--2018_11_7-->
+    <string name="shu_xiang_si_hou_gao_dian_text">
+            殊像寺的后高殿
+    </string>
+    <string name="shu_xiang_si_jia_lan_dian_text">
+            殊像寺珈蓝殿
+    </string>
+    <string name="shu_xiang_si_da_wen_shu_dian_text">
+        殊像寺的文殊殿，是供奉文殊菩萨的大殿。院前有石牌坊一座，石横梁嵌的石壁上有康熙御笔"五台圣境"四字。牌坊与牌楼不同，牌坊只用立柱加横梁，而牌楼则是在横梁上还筑有楼顶，斗拱层叠，飞檐起脊，形式华美。文殊殿重建于清代，阔三楹，进深二架，单檐庑殿顶，殿顶覆盖琉璃黄瓦，历经寒暑数百年，色泽依然如新。大殿的殿脊正中，置金碧辉煌的鎏金铜法轮。大殿四周副阶周匝，石雕回廊环护，把殿堂烘托得更加富丽堂皇。殿内佛坛上供文殊菩萨骑狻猊彩色泥塑像，东西两侧的佛坛上则供十八罗汉塑像。
+    </string>
+    <string name="shu_xiang_si_tian_wang_dian_text">
+        山门与天王殿合而为一，殿的正中央坐着弥勒佛，他为佛教做出了巨大的贡献，在“竖三世佛”中，他是未来佛。他笑口常开，模样喜人，人见人爱，将其安置在寺庙最前端的天王殿内，为的是让香客一进寺庙，就有一种欢喜吉祥的好感觉，好心情。
+    </string>
+    <string name="jin_ge_si_wo_fo_si_text">
+        金阁殿卧佛寺
+    </string>
+    <string name="jin_ge_si_da_xiong_bao_dian_text">
+        大雄宝殿，面宽5间，进深3间，单檐歇山顶，前出廊。殿内供横三世佛，中为释迦牟尼和其弟子迦叶、阿南，左为东方琉璃世界药师佛，又为西方极乐世界阿弥陀佛和大海清净众菩萨。东西山墙塑姿态各异的十八罗汉。此外，殿内还供着一尊木雕罗睺像。
+    </string>
+    <string name="jin_ge_si_da_bei_dian_text">
+            金阁寺大悲殿
+    </string>
+    <string name="jin_ge_si_tian_wang_dian_text">
+        金阁寺天王殿，即山门，五开间，单檐硬山顶，左右为两个拱形旁门，上有汉白玉浮雕39幅。殿内佛坛上为木雕绞龙柱神龛，内供弥勒佛，两山间为四大天王和哼哈二将。天王殿两翼为钟鼓二楼。
+    </string>
+    <string name="long_quan_si_da_xiong_bao_dian_text">
+        龙泉寺大雄宝殿，五开间，面宽17米，进深10.5米，主供释迦牟尼佛、药师佛，阿弥陀佛，两侧是十八罗汉，东西墙为释迦牟尼佛生平事迹的壁画。
+    </string>
+    <string name="long_quan_si_da_guan_yin_dian_text">
+        观音殿建于民国初年，木结构建筑面宽三间，14.3,进深10.2米，四出廊，单檐歇山顶，殿内供观音菩萨、文殊菩萨和普贤菩萨，东西塑有十二圆觉菩萨，分别为文殊，普贤、弥勒、大势至、净业障、圆觉、普眼、金刚藏、清净慧、观音、普觉、贤善首。
+    </string>
+    <string name="long_quan_si_da_wu_guan_tang_text">
+            龙泉寺五观堂
+    </string>
+    <string name="long_quan_si_da_tian_wang_dian_text">
+        该殿建于民国初年，木结构建筑，面宽11.8米，进深10.米2，单檐硬山顶，正面为汉白玉拱券殿门，雕有二龙戏珠，鲤鱼跃龙门、丹凤朝阳等图案。殿内主弥勒佛，其后为韦陀菩萨，东西两侧立四大天王、哼哈二将，降龙伏虎。
+    </string>
+    <string name="long_quan_si_da_zu_shi_dian_text">
+            龙泉寺祖师殿
+    </string>
     <string name="dummy_button">Dummy Button</string>
 
     <string name="title_activity_setting">Settings</string>
