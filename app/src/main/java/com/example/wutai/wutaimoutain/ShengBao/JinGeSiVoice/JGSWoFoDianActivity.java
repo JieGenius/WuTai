@@ -52,7 +52,7 @@ public class JGSWoFoDianActivity extends AppCompatActivity {
         collapsingToolbarLayout.setExpandedTitleMarginBottom(10);
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(R.color.black));
         Glide.with(mContex).load(R.mipmap.jin_ge_si_tian_wang_dian_voice_img).into(showImgView);
-        String content = mContex.getString(R.string.jin_ge_si_wo_fo_si_text);
+        String content = mContex.getString(R.string.jin_ge_si_wo_fo_dian_text);
         voiceContent.setText(content);
         AudioUtils.getInstance().init(JGSWoFoDianActivity.this); //初始化语音对象
         //从string里面获取文本

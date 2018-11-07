@@ -51,7 +51,7 @@ public class LQSTianWangDianActivity extends AppCompatActivity {
         collapsingToolbarLayout.setCollapsedTitleTextColor(getResources().getColor(R.color.black));
         collapsingToolbarLayout.setExpandedTitleMarginBottom(10);
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(R.color.black));
-        Glide.with(mContex).load(R.mipmap.da_bai_ta_voice).into(showImgView);
+        Glide.with(mContex).load(R.mipmap.jin_ge_si_tian_wang_dian_voice_img).into(showImgView);
         String content = mContex.getString(R.string.long_quan_si_da_tian_wang_dian_text);
         voiceContent.setText(content);
         AudioUtils.getInstance().init(LQSTianWangDianActivity.this); //初始化语音对象

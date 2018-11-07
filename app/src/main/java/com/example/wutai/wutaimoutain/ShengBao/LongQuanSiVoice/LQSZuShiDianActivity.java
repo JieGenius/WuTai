@@ -51,7 +51,7 @@ public class LQSZuShiDianActivity extends AppCompatActivity {
         collapsingToolbarLayout.setCollapsedTitleTextColor(getResources().getColor(R.color.black));
         collapsingToolbarLayout.setExpandedTitleMarginBottom(10);
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(R.color.black));
-        Glide.with(mContex).load(R.mipmap.da_bai_ta_voice).into(showImgView);
+        Glide.with(mContex).load(R.mipmap.lqs_zu_shi_dian_voice_img).into(showImgView);
         String content = mContex.getString(R.string.long_quan_si_da_zu_shi_dian_text);
         voiceContent.setText(content);
         AudioUtils.getInstance().init(LQSZuShiDianActivity.this); //初始化语音对象

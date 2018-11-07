@@ -10,8 +10,8 @@
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="20sp"
         android:layout_height="20sp"
-        android:layout_x="185dp"
-        android:layout_y="95dp"
+        android:layout_x="189dp"
+        android:layout_y="188dp"
         android:src="@mipmap/mini_narrate"
         tools:layout_editor_absoluteX="122dp"
         tools:layout_editor_absoluteY="47dp" />
@@ -19,8 +19,8 @@
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="20sp"
         android:layout_height="20sp"
-        android:layout_x="171dp"
-        android:layout_y="233dp"
+        android:layout_x="191dp"
+        android:layout_y="287dp"
         android:src="@mipmap/mini_narrate"
         tools:layout_editor_absoluteX="147dp"
         tools:layout_editor_absoluteY="127dp" />
@@ -28,8 +28,8 @@
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="20sp"
         android:layout_height="20dp"
-        android:layout_x="170dp"
-        android:layout_y="347dp"
+        android:layout_x="194dp"
+        android:layout_y="380dp"
         android:src="@mipmap/mini_narrate"
         tools:layout_editor_absoluteX="147dp"
         tools:layout_editor_absoluteY="242dp" />
@@ -37,8 +37,8 @@
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="20sp"
         android:layout_height="20sp"
-        android:layout_x="174dp"
-        android:layout_y="456dp"
+        android:layout_x="73dp"
+        android:layout_y="217dp"
         android:src="@mipmap/mini_narrate"
         tools:layout_editor_absoluteX="167dp"
         tools:layout_editor_absoluteY="349dp" />
@@ -46,8 +46,8 @@
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="20sp"
         android:layout_height="20sp"
-        android:layout_x="283dp"
-        android:layout_y="201dp"
+        android:layout_x="285dp"
+        android:layout_y="268dp"
         android:src="@mipmap/mini_narrate"
         tools:layout_editor_absoluteX="167dp"
         tools:layout_editor_absoluteY="349dp" />
@@ -58,8 +58,8 @@
         style="?borderlessButtonStyle"
         android:layout_width="98dp"
         android:layout_height="74dp"
-        android:layout_x="113dp"
-        android:layout_y="48dp"
+        android:layout_x="129dp"
+        android:layout_y="145dp"
         tools:layout_editor_absoluteX="9dp"
         tools:layout_editor_absoluteY="130dp" />
 
@@ -68,8 +68,8 @@
         style="?borderlessButtonStyle"
         android:layout_width="106dp"
         android:layout_height="82dp"
-        android:layout_x="110dp"
-        android:layout_y="187dp"
+        android:layout_x="121dp"
+        android:layout_y="254dp"
         tools:layout_editor_absoluteX="233dp"
         tools:layout_editor_absoluteY="288dp" />
 
@@ -77,9 +77,9 @@
         android:id="@+id/LQS_tian_wang_dian"
         style="?borderlessButtonStyle"
         android:layout_width="wrap_content"
-        android:layout_height="86dp"
-        android:layout_x="120dp"
-        android:layout_y="306dp"
+        android:layout_height="64dp"
+        android:layout_x="151dp"
+        android:layout_y="365dp"
         tools:layout_editor_absoluteX="235dp"
         tools:layout_editor_absoluteY="409dp" />
 
@@ -87,16 +87,16 @@
         android:id="@+id/LQS_zu_shi_dian"
         style="?borderlessButtonStyle"
         android:layout_width="wrap_content"
-        android:layout_height="79dp"
-        android:layout_x="123dp"
-        android:layout_y="430dp" />
+        android:layout_height="67dp"
+        android:layout_x="20dp"
+        android:layout_y="184dp" />
 
     <Button
         android:id="@+id/LQS_wu_guan_tang"
         style="?borderlessButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="79dp"
-        android:layout_x="247dp"
-        android:layout_y="157dp" />
+        android:layout_x="253dp"
+        android:layout_y="230dp" />
 
 </AbsoluteLayout>
