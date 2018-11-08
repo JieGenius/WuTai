@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:padding="3dp"
     >
-    <TextView
+<!--    <TextView
         android:id="@+id/talk_comment_item_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,12 +18,12 @@
         android:text=":"
         android:textSize="16sp"
         android:textColor="#29308b"
-        />
+        />-->
     <TextView
         android:id="@+id/talk_comment_item_content"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:singleLine="true"
+        android:maxLines="3"
         android:textSize="16sp"
         android:textColor="#4b4242"
         />

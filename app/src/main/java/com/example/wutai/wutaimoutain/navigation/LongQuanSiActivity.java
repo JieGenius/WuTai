@@ -102,7 +102,7 @@ public class LongQuanSiActivity extends AppCompatActivity implements View.OnClic
     public boolean onMenuItemClick(MenuItem item) {
         switch (item.getItemId()){
             case R.id.DXBD_yinglian_detail:
-                YinglianShowActivity.actionstart(LongQuanSiActivity.this,name,"龙泉寺大雄宝殿");
+                YinglianShowActivity.actionstart(LongQuanSiActivity.this,name,"大雄宝殿");
                 break;
             case R.id.DXBD_voice_desc:
                 startActivity(new Intent(LongQuanSiActivity.this, LQSDaXiongBaoDianActivity.class));
@@ -111,7 +111,7 @@ public class LongQuanSiActivity extends AppCompatActivity implements View.OnClic
                 Jianjie_dadian_actiivty.actionstart1(LongQuanSiActivity.this,name,"龙泉寺大雄宝殿");
                 break;
             case R.id.GYD_yinglian_detail:
-                YinglianShowActivity  .actionstart(LongQuanSiActivity.this,name,"龙泉寺观音殿");
+                YinglianShowActivity  .actionstart(LongQuanSiActivity.this,name,"观音殿");
                 break;
             case R.id.GYD_voice_desc:
                 startActivity(new Intent(LongQuanSiActivity.this, LQSGuanYinDianActivity.class));
@@ -120,7 +120,7 @@ public class LongQuanSiActivity extends AppCompatActivity implements View.OnClic
                 Jianjie_dadian_actiivty.actionstart1(LongQuanSiActivity.this,name,"龙泉寺观音殿");
                 break;
             case R.id.TWD_yinglian_detail:
-                YinglianShowActivity  .actionstart(LongQuanSiActivity.this,name,"龙泉寺天王殿");
+                YinglianShowActivity  .actionstart(LongQuanSiActivity.this,name,"天王殿");
                 break;
             case R.id.TWD_voice_desc:
                 startActivity(new Intent(LongQuanSiActivity.this, LQSTianWangDianActivity.class));
@@ -129,7 +129,7 @@ public class LongQuanSiActivity extends AppCompatActivity implements View.OnClic
                 Jianjie_dadian_actiivty.actionstart1(LongQuanSiActivity.this,name,"龙泉寺天王殿");
                 break;
             case R.id.WGT_yinglian_detail:
-                YinglianShowActivity  .actionstart(LongQuanSiActivity.this,name,"龙泉寺五观堂");
+                YinglianShowActivity  .actionstart(LongQuanSiActivity.this,name,"五观堂");
                 break;
             case R.id.WGT_voice_desc:
                 startActivity(new Intent(LongQuanSiActivity.this, LQSWuGuanTangActivity.class));
@@ -138,7 +138,7 @@ public class LongQuanSiActivity extends AppCompatActivity implements View.OnClic
                 Jianjie_dadian_actiivty.actionstart1(LongQuanSiActivity.this,name,"龙泉寺五观堂");
                 break;
             case R.id.ZSD_yinglian_detail:
-                YinglianShowActivity  .actionstart(LongQuanSiActivity.this,name,"龙泉寺祖师殿");
+                YinglianShowActivity.actionstart(LongQuanSiActivity.this,name,"祖师殿");
                 break;
             case R.id.ZSD_voice_desc:
                 startActivity(new Intent(LongQuanSiActivity.this, LQSZuShiDianActivity.class));

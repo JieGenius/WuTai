@@ -152,19 +152,19 @@ public class Every_Simiao_Activity extends AppCompatActivity {
                     Intent intent = new Intent(Every_Simiao_Activity.this, LuoHouSiActivity.class);
                     startActivity(intent);
                 }
-                else if(name_simiao.equals("")){
+                else if(name_simiao.equals("殊像寺")){
                     startActivity(new Intent(Every_Simiao_Activity.this,ShuXiangSiActivity.class));
                 }
-                else if(name_simiao.equals("")){
+                else if(name_simiao.equals("南山寺")){
                     startActivity(new Intent(Every_Simiao_Activity.this,NanShanSiActivity.class));
                 }
-                else if(name_simiao.equals("")){
+                else if(name_simiao.equals("金阁寺")){
                     startActivity(new Intent(Every_Simiao_Activity.this,JinGeSiActivity.class));
                 }
-                else if(name_simiao.equals("")){
+                else if(name_simiao.equals("龙泉寺")){
                     startActivity(new Intent(Every_Simiao_Activity.this,LongQuanSiActivity.class));
                 }
-                else if(name_simiao.equals("")){
+                else if(name_simiao.equals("大圆照寺")){
                     startActivity(new Intent(Every_Simiao_Activity.this,YuanZhaoSiActivity.class));
                 }
                 else Toast.makeText(Every_Simiao_Activity.this,"暂时没有数据",Toast.LENGTH_SHORT).show();

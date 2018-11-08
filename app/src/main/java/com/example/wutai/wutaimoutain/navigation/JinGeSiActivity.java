@@ -96,7 +96,7 @@ public class JinGeSiActivity extends AppCompatActivity implements View.OnClickLi
     public boolean onMenuItemClick(MenuItem item) {
         switch (item.getItemId()){
             case R.id.WFD_yinglian_detail:
-                YinglianShowActivity.actionstart(JinGeSiActivity.this,name,"金阁寺卧佛殿");
+                YinglianShowActivity.actionstart(JinGeSiActivity.this,name,"卧佛殿");
                 break;
             case R.id.WFD_voice_desc:
                 startActivity(new Intent(JinGeSiActivity.this, JGSWoFoDianActivity.class));
@@ -105,7 +105,7 @@ public class JinGeSiActivity extends AppCompatActivity implements View.OnClickLi
                 Jianjie_dadian_actiivty.actionstart1(JinGeSiActivity.this,name,"金阁寺卧佛殿");
                 break;
             case R.id.DXBD_yinglian_detail:
-                YinglianShowActivity  .actionstart(JinGeSiActivity.this,name,"金阁寺大雄宝殿");
+                YinglianShowActivity  .actionstart(JinGeSiActivity.this,name,"大雄宝殿");
                 break;
             case R.id.DXBD_voice_desc:
                 startActivity(new Intent(JinGeSiActivity.this, JGSDaXiongBaoDianActivity.class));
@@ -114,7 +114,7 @@ public class JinGeSiActivity extends AppCompatActivity implements View.OnClickLi
                 Jianjie_dadian_actiivty.actionstart1(JinGeSiActivity.this,name,"金阁寺大雄宝殿");
                 break;
             case R.id.DBD_yinglian_detail:
-                YinglianShowActivity  .actionstart(JinGeSiActivity.this,name,"金阁寺大悲殿");
+                YinglianShowActivity  .actionstart(JinGeSiActivity.this,name,"大悲殿");
                 break;
             case R.id.DBD_voice_desc:
                 startActivity(new Intent(JinGeSiActivity.this, JGSDaBeiDianActivity.class));
@@ -123,7 +123,7 @@ public class JinGeSiActivity extends AppCompatActivity implements View.OnClickLi
                 Jianjie_dadian_actiivty.actionstart1(JinGeSiActivity.this,name,"金阁寺大悲殿");
                 break;
             case R.id.TWD_yinglian_detail:
-                YinglianShowActivity  .actionstart(JinGeSiActivity.this,name,"金阁寺天王殿");
+                YinglianShowActivity  .actionstart(JinGeSiActivity.this,name,"天王殿");
                 break;
             case R.id.TWD_voice_desc:
                 startActivity(new Intent(JinGeSiActivity.this, TianWangDianActivity.class));

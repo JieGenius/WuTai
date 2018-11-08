@@ -86,7 +86,7 @@ public class ShuXiangSiActivity extends AppCompatActivity implements View.OnClic
     public boolean onMenuItemClick(MenuItem item) {
         switch (item.getItemId()){
             case R.id.DWSD_yinglian_detail:
-                YinglianShowActivity.actionstart(ShuXiangSiActivity.this,name,"殊像寺大文殊殿");
+                YinglianShowActivity.actionstart(ShuXiangSiActivity.this,name,"文殊殿");
                 break;
             case R.id.DWSD_voice_desc:
                 startActivity(new Intent(ShuXiangSiActivity.this, SXSDaWenShuDianActivity.class));
@@ -95,7 +95,7 @@ public class ShuXiangSiActivity extends AppCompatActivity implements View.OnClic
                 Jianjie_dadian_actiivty.actionstart1(ShuXiangSiActivity.this,name,"殊像寺大文殊殿");
                 break;
             case R.id.HGD_yinglian_detail:
-                YinglianShowActivity  .actionstart(ShuXiangSiActivity.this,name,"殊像寺后高殿");
+                YinglianShowActivity  .actionstart(ShuXiangSiActivity.this,name,"后高殿");
                 break;
             case R.id.HGD_voice_desc:
                 startActivity(new Intent(ShuXiangSiActivity.this, SXSHouGaoDianActivity.class));
@@ -104,7 +104,7 @@ public class ShuXiangSiActivity extends AppCompatActivity implements View.OnClic
                 Jianjie_dadian_actiivty.actionstart1(ShuXiangSiActivity.this,name,"殊像寺后高殿");
                 break;
             case R.id.JLD_yinglian_detail:
-                YinglianShowActivity  .actionstart(ShuXiangSiActivity.this,name,"殊像寺珈蓝殿");
+                YinglianShowActivity  .actionstart(ShuXiangSiActivity.this,name,"伽蓝殿");
                 break;
             case R.id.JLD_voice_desc:
                 startActivity(new Intent(ShuXiangSiActivity.this, SXSJiaLanDianActivity.class));

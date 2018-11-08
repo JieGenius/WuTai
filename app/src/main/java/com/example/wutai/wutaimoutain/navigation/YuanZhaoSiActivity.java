@@ -110,7 +110,7 @@ public class YuanZhaoSiActivity extends AppCompatActivity implements View.OnClic
                 Jianjie_dadian_actiivty.actionstart1(YuanZhaoSiActivity.this,name,"大白塔");
                 break;
             case R.id.DCBD_yinglian_detail:
-                YinglianShowActivity  .actionstart(YuanZhaoSiActivity.this,name,"大慈延寿宝殿");
+                YinglianShowActivity  .actionstart(YuanZhaoSiActivity.this,name,"大慈延寿殿");
                 break;
             case R.id.DCBD_voice_desc:
                 startActivity(new Intent(YuanZhaoSiActivity.this, DaCiYanShouBaoDianActivity.class));
