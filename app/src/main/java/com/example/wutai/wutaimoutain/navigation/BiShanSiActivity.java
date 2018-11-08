@@ -4,9 +4,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
+import android.view.Display;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
+import android.widget.AbsoluteLayout;
 import android.widget.Button;
 import android.widget.PopupMenu;
 
@@ -23,30 +27,46 @@ import com.example.wutai.wutaimoutain.yinglian.YinglianShowActivity;
 import com.iflytek.cloud.SpeechConstant;
 import com.iflytek.cloud.SpeechUtility;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class BiShanSiActivity extends AppCompatActivity implements View.OnClickListener,PopupMenu.OnMenuItemClickListener{
-    private Button CJG,JTD,LYS,TWD; // 藏经阁、戒坛殿、雷音寺、天王殿
+    private CircleImageView CJG,JTD,LYS,TWD; // 藏经阁、戒坛殿、雷音寺、天王殿
     private String content;
     private Context mContex;
     private String name = "碧山寺";
-
+    /*private DisplayMetrics metrics = new DisplayMetrics();
+    private int equipHeight;
+    private int equipWidth;
+    private int statusBarHeight;*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bi_shan_si);
         initView();
         mContex = getApplicationContext();
+        /*((WindowManager)getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getMetrics(metrics);
+        equipHeight = metrics.heightPixels;
+        equipWidth = metrics.widthPixels;
+
+        int result = 0;
+        int resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
+        if (resourceId > 0) {
+            result = getResources().getDimensionPixelSize(resourceId);
+        }
+        statusBarHeight = result;*/
+
     }
 
     public void initView(){
         //初始化声音设置
         SpeechUtility.createUtility(BiShanSiActivity.this, SpeechConstant.APPID +"=5b63c383");  //=后面这里要替换成自己申请的 AppID
-        CJG = (Button)findViewById(R.id.bi_shan_si_cang_jing_ge);
+        CJG = (CircleImageView)findViewById(R.id.bi_shan_si_cang_jing_ge);
         CJG.setOnClickListener(this);
-        JTD = (Button)findViewById(R.id.bi_shan_si_jie_tan_dian);
+        JTD = (CircleImageView)findViewById(R.id.bi_shan_si_jie_tan_dian);
         JTD.setOnClickListener(this);
-        LYS = (Button)findViewById(R.id.bi_shan_si_lei_yin_si);
+        LYS = (CircleImageView)findViewById(R.id.bi_shan_si_lei_yin_si);
         LYS.setOnClickListener(this);
-        TWD = (Button)findViewById(R.id.bi_shan_si_tian_wang_dian);
+        TWD = (CircleImageView)findViewById(R.id.bi_shan_si_tian_wang_dian);
         TWD.setOnClickListener(this);
     }
 
@@ -135,5 +155,6 @@ public class BiShanSiActivity extends AppCompatActivity implements View.OnClickL
         }
         return true;
     }
+
 
 }

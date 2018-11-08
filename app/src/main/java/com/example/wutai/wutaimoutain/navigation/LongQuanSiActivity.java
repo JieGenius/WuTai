@@ -21,9 +21,11 @@ import com.example.wutai.wutaimoutain.yinglian.YinglianShowActivity;
 import com.iflytek.cloud.SpeechConstant;
 import com.iflytek.cloud.SpeechUtility;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 
 public class LongQuanSiActivity extends AppCompatActivity implements View.OnClickListener,PopupMenu.OnMenuItemClickListener{
-    private Button DXBD,GYD,TWD,ZSD,WGT;
+    private CircleImageView DXBD,GYD,TWD,ZSD,WGT;
     private String content;
     private Context mContex;
     private String name = "龙泉寺";
@@ -38,15 +40,15 @@ public class LongQuanSiActivity extends AppCompatActivity implements View.OnClic
     public void initView(){
         //初始化声音设置
         SpeechUtility.createUtility(LongQuanSiActivity.this, SpeechConstant.APPID +"=5b63c383");  //=后面这里要替换成自己申请的 AppID
-        DXBD = (Button)findViewById(R.id.LQS_da_xiong_bao_dian);
+        DXBD = (CircleImageView)findViewById(R.id.LQS_da_xiong_bao_dian);
         DXBD.setOnClickListener(this);
-        GYD = (Button)findViewById(R.id.LQS_guan_yin_dian);
+        GYD = (CircleImageView)findViewById(R.id.LQS_guan_yin_dian);
         GYD.setOnClickListener(this);
-        TWD = (Button)findViewById(R.id.LQS_tian_wang_dian);
+        TWD = (CircleImageView)findViewById(R.id.LQS_tian_wang_dian);
         TWD.setOnClickListener(this);
-        ZSD = (Button)findViewById(R.id.LQS_zu_shi_dian);
+        ZSD = (CircleImageView)findViewById(R.id.LQS_zu_shi_dian);
         ZSD.setOnClickListener(this);
-        WGT = (Button)findViewById(R.id.LQS_wu_guan_tang);
+        WGT = (CircleImageView)findViewById(R.id.LQS_wu_guan_tang);
         WGT.setOnClickListener(this);
     }
 

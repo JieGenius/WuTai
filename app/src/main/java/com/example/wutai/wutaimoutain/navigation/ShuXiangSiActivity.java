@@ -23,9 +23,11 @@ import com.example.wutai.wutaimoutain.yinglian.YinglianShowActivity;
 import com.iflytek.cloud.SpeechConstant;
 import com.iflytek.cloud.SpeechUtility;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 
 public class ShuXiangSiActivity extends AppCompatActivity implements View.OnClickListener,PopupMenu.OnMenuItemClickListener{
-    private Button HGD,DWSD,JLD;
+    private CircleImageView HGD,DWSD,JLD;
     private String content;
     private Context mContex;
     private String name = "殊像寺";
@@ -40,11 +42,11 @@ public class ShuXiangSiActivity extends AppCompatActivity implements View.OnClic
     public void initView(){
         //初始化声音设置
         SpeechUtility.createUtility(ShuXiangSiActivity.this, SpeechConstant.APPID +"=5b63c383");  //=后面这里要替换成自己申请的 AppID
-        HGD = (Button)findViewById(R.id.SXS_hou_gao_dian);
+        HGD = (CircleImageView)findViewById(R.id.SXS_hou_gao_dian);
         HGD.setOnClickListener(this);
-        DWSD = (Button)findViewById(R.id.SXS_da_wen_shu_dian);
+        DWSD = (CircleImageView)findViewById(R.id.SXS_da_wen_shu_dian);
         DWSD.setOnClickListener(this);
-        JLD = (Button)findViewById(R.id.SXS_jia_lan_dian);
+        JLD = (CircleImageView)findViewById(R.id.SXS_jia_lan_dian);
         JLD.setOnClickListener(this);
     }
 

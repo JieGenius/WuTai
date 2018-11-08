@@ -20,9 +20,11 @@ import com.example.wutai.wutaimoutain.yinglian.YinglianShowActivity;
 import com.iflytek.cloud.SpeechConstant;
 import com.iflytek.cloud.SpeechUtility;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 
 public class TaYuanSiActivity extends AppCompatActivity implements View.OnClickListener,PopupMenu.OnMenuItemClickListener{
-    private Button DCJG,DBT,DCYSBD,TWD;
+    private CircleImageView DCJG,DBT,DCYSBD,TWD;
     private String content;
     private Context mContex;
     private String name = "塔院寺";
@@ -37,13 +39,13 @@ public class TaYuanSiActivity extends AppCompatActivity implements View.OnClickL
     public void initView(){
         //初始化声音设置
         SpeechUtility.createUtility(TaYuanSiActivity.this, SpeechConstant.APPID +"=5b63c383");  //=后面这里要替换成自己申请的 AppID
-        DCJG = (Button)findViewById(R.id.da_cang_jing_ge);
+        DCJG = (CircleImageView)findViewById(R.id.da_cang_jing_ge);
         DCJG.setOnClickListener(this);
-        DBT = (Button)findViewById(R.id.da_bai_ta);
+        DBT = (CircleImageView)findViewById(R.id.da_bai_ta);
         DBT.setOnClickListener(this);
-        DCYSBD = (Button)findViewById(R.id.da_ci_bao_dian);
+        DCYSBD = (CircleImageView)findViewById(R.id.da_ci_bao_dian);
         DCYSBD.setOnClickListener(this);
-        TWD = (Button)findViewById(R.id.tian_wang_dian);
+        TWD = (CircleImageView)findViewById(R.id.tian_wang_dian);
         TWD.setOnClickListener(this);
     }
 

@@ -1,5 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/long_quan_si">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/LQS_da_xiong_bao_dian"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:alpha="0.5"
+        android:src="@mipmap/mini_narrate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.348" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/LQS_zu_shi_dian"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:alpha="0.5"
+        android:src="@mipmap/mini_narrate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.348"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.408" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/LQS_guan_yin_dian"
+        android:layout_width="20sp"
+        android:layout_height="20dp"
+        android:alpha="0.5"
+        android:src="@mipmap/mini_narrate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/LQS_wu_guan_tang"
+
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:alpha="0.5"
+        android:src="@mipmap/mini_narrate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.484" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/LQS_tian_wang_dian"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:alpha="0.5"
+        android:src="@mipmap/mini_narrate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.634" />
+</android.support.constraint.ConstraintLayout>
+<!--<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -99,4 +170,4 @@
         android:layout_x="253dp"
         android:layout_y="230dp" />
 
-</AbsoluteLayout>
+</AbsoluteLayout>-->

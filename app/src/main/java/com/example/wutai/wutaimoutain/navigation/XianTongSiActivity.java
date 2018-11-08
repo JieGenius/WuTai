@@ -20,9 +20,11 @@ import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.iflytek.cloud.SpeechConstant;
 import com.iflytek.cloud.SpeechUtility;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class XianTongSiActivity extends AppCompatActivity implements View.OnClickListener,PopupMenu.OnMenuItemClickListener{
     private FloatingActionButton backNavigation;
-    private Button WLD,DXBD,DWSD,GYD;
+    private CircleImageView WLD,DXBD,DWSD,GYD;
     private Context mContex;
     private String content;
     private String name = "显通寺";
@@ -36,13 +38,13 @@ public class XianTongSiActivity extends AppCompatActivity implements View.OnClic
     public void initView(){
         // 初始化
         SpeechUtility.createUtility(XianTongSiActivity.this, SpeechConstant.APPID +"=5b63c383");  //=后面这里要替换成自己申请的 AppID
-        WLD = (Button) findViewById(R.id.wu_liang_dian);
+        WLD = (CircleImageView) findViewById(R.id.wu_liang_dian);
         WLD.setOnClickListener(this);
-        DXBD = (Button)findViewById(R.id.da_xiong_bao_dian);
+        DXBD = (CircleImageView)findViewById(R.id.da_xiong_bao_dian);
         DXBD.setOnClickListener(this);
-        DWSD = (Button)findViewById(R.id.da_wen_shu_dian);
+        DWSD = (CircleImageView)findViewById(R.id.da_wen_shu_dian);
         DWSD.setOnClickListener(this);
-        GYD = (Button)findViewById(R.id.guan_yin_dian);
+        GYD = (CircleImageView)findViewById(R.id.guan_yin_dian);
         GYD.setOnClickListener(this);
         mContex = getApplicationContext();
     }

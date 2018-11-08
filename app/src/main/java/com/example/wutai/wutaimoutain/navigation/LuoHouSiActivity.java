@@ -23,8 +23,10 @@ import com.example.wutai.wutaimoutain.yinglian.YinglianShowActivity;
 import com.iflytek.cloud.SpeechConstant;
 import com.iflytek.cloud.SpeechUtility;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class LuoHouSiActivity extends AppCompatActivity implements View.OnClickListener,PopupMenu.OnMenuItemClickListener{
-    private Button KHXFD,DXBD,WSD,TWD;
+    private CircleImageView KHXFD,DXBD,WSD,TWD;
     private String content;
     private Context mContex;
     private String name = "罗睺寺";
@@ -39,13 +41,13 @@ public class LuoHouSiActivity extends AppCompatActivity implements View.OnClickL
     public void initView(){
         //初始化声音设置
         SpeechUtility.createUtility(LuoHouSiActivity.this, SpeechConstant.APPID +"=5b63c383");  //=后面这里要替换成自己申请的 AppID
-        KHXFD = (Button)findViewById(R.id.luo_hou_si_kai_hua_xian_fo);
+        KHXFD = (CircleImageView)findViewById(R.id.luo_hou_si_kai_hua_xian_fo);
         KHXFD.setOnClickListener(this);
-        DXBD = (Button)findViewById(R.id.luo_hou_si_da_xiong_bao_dian);
+        DXBD = (CircleImageView)findViewById(R.id.luo_hou_si_da_xiong_bao_dian);
         DXBD.setOnClickListener(this);
-        WSD = (Button)findViewById(R.id.luo_hou_si_wen_shu_dian);
+        WSD = (CircleImageView)findViewById(R.id.luo_hou_si_wen_shu_dian);
         WSD.setOnClickListener(this);
-        TWD = (Button)findViewById(R.id.luo_hou_si_tian_wang_dian);
+        TWD = (CircleImageView)findViewById(R.id.luo_hou_si_tian_wang_dian);
         TWD.setOnClickListener(this);
     }
 

@@ -91,7 +91,12 @@ public class TalkAdapter extends RecyclerView.Adapter<TalkAdapter.ViewHold> {
                 showPhotoListActivity.newInstance(parent.getContext(),posi,list.get(position).getPicArr());
             }
         });
-        holder.comments.setLayoutManager(new LinearLayoutManager(context));
+        holder.comments.setLayoutManager(new LinearLayoutManager(context){
+            @Override
+            public boolean canScrollVertically() {
+                return false;
+            }
+        });
         holder.comments.setAdapter(new CommentsAdapter(context,list.get(position).getCommArr()));
         holder.comment.setOnClickListener(new View.OnClickListener() {
             @Override

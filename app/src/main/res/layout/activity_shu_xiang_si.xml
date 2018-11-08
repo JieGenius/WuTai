@@ -1,4 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/shu_xiang_si">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/SXS_hou_gao_dian"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:alpha="0.5"
+        android:src="@mipmap/mini_narrate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.662"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.410" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/SXS_da_wen_shu_dian"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:alpha="0.5"
+        android:src="@mipmap/mini_narrate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.671"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.566" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/SXS_jia_lan_dian"
+        android:layout_width="20sp"
+        android:layout_height="20dp"
+        android:alpha="0.5"
+        android:src="@mipmap/mini_narrate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.710" />
+
+</android.support.constraint.ConstraintLayout>
+<!--
 <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -64,3 +112,4 @@
         tools:layout_editor_absoluteX="235dp"
         tools:layout_editor_absoluteY="409dp" />
 </AbsoluteLayout>
+-->
