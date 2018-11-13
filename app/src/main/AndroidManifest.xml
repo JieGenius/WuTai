@@ -53,7 +53,7 @@
 
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="2P5B0uGCvS8nWASYDxak1KaEOL2PS8YG" />
+            android:value="DsLTkzFWs5jGbiGWFa8fPI2k3enlVaw2" />
 
         <activity
             android:name=".MainActivity"
@@ -315,9 +315,6 @@
             android:theme="@style/VoiceDetailTheme"
             />
         <activity android:name=".ShengBao.JinGeSiVoice.JGSTianWangDianActivity"
-            android:theme="@style/VoiceDetailTheme"
-            />
-        <activity android:name=".ShengBao.JinGeSiVoice.JGSWoFoDian"
             android:theme="@style/VoiceDetailTheme"
             />
         <activity android:name=".ShengBao.JinGeSiVoice.JGSWoFoDianActivity"

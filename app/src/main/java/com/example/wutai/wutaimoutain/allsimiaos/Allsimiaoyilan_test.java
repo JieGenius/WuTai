@@ -45,11 +45,11 @@ public class Allsimiaoyilan_test extends AppCompatActivity {
         list.add(R.drawable.temple_lq_iv_icon);
         list.add(R.drawable.dayuanzhao);
         List<String> list1 = new ArrayList<>();
-        list1.add("国宝：显通寺");
-        list1.add("国宝：菩萨顶");
-        list1.add("国宝：塔院寺");
-        list1.add("国宝：碧山寺");
-        list1.add("国宝：罗睺寺");
+        list1.add("国保：显通寺");
+        list1.add("国保：菩萨顶");
+        list1.add("国保：塔院寺");
+        list1.add("国保：碧山寺");
+        list1.add("国保：罗睺寺");
         list1.add("省保：殊像寺");
         list1.add("省保：南山寺");
         list1.add("省保：金阁寺");
